@@ -1,7 +1,61 @@
 import { useState } from 'react';
 import AirportSearch from './AirportSearch';
-import { ArrowLeft, Loader2, Plane, Calendar, Clock, Sun, Moon, Star, Sparkles, MapPin } from 'lucide-react';
+import { 
+  ArrowLeft, 
+  Loader2, 
+  Plane, 
+  Calendar, 
+  Clock, 
+  Sun, 
+  Moon, 
+  Star, 
+  Sparkles, 
+  MapPin 
+} from 'lucide-react';
 
+// To keep the code clean, you can define your preferences array outside the component
+const preferences = [
+  { 
+    id: 'sunrise', 
+    icon: Sun, 
+    label: 'Sunrise', 
+    description: 'Catch the golden hour',
+    color: 'from-orange-400 to-yellow-400',
+  },
+  { 
+    id: 'sunset', 
+    icon: Moon, 
+    label: 'Sunset', 
+    description: 'Watch the sky turn colors',
+    color: 'from-purple-500 to-pink-500',
+  },
+  { 
+    id: 'general', 
+    icon: Star, 
+    label: 'Best Views', 
+    description: 'Optimal viewing experience',
+    color: 'from-cyan-400 to-blue-500',
+  }
+];
+
+// Reusable component for form sections
+const FormSection = ({ icon, title, subtitle, children }) => {
+  const Icon = icon;
+  return (
+    <div className="space-y-8">
+      <div className="text-center">
+        <div className="inline-flex items-center justify-center w-16 h-16 mb-4 bg-gradient-to-br from-sky-100 to-cyan-200 rounded-2xl shadow-md">
+          <Icon className="w-8 h-8 text-cyan-600" />
+        </div>
+        <h2 className="text-3xl font-bold text-slate-800">{title}</h2>
+        <p className="text-slate-500 mt-1">{subtitle}</p>
+      </div>
+      {children}
+    </div>
+  );
+};
+
+// Main Component
 function FlightInput({ onSubmit, onBack }) {
   const [formData, setFormData] = useState({
     fromAirport: null,
@@ -18,17 +72,12 @@ function FlightInput({ onSubmit, onBack }) {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: null }));
-    }
+    setErrors(prev => ({ ...prev, [name]: null }));
   };
 
   const handleAirportChange = (airport, name) => {
     setFormData(prev => ({ ...prev, [name]: airport }));
-    // Clear errors when a selection is made
-    if (errors.fromAirport || errors.toAirport) {
-      setErrors(prev => ({ ...prev, fromAirport: null, toAirport: null }));
-    }
+    setErrors(prev => ({ ...prev, fromAirport: null, toAirport: null }));
   };
 
   const handlePreferenceChange = (preference) => {
@@ -39,8 +88,8 @@ function FlightInput({ onSubmit, onBack }) {
     const newErrors = {};
     if (!formData.fromAirport) newErrors.fromAirport = 'Departure airport is required.';
     if (!formData.toAirport) newErrors.toAirport = 'Arrival airport is required.';
-    if (formData.fromAirport && formData.toAirport && formData.fromAirport.iata === formData.toAirport.iata) {
-      newErrors.toAirport = 'Arrival airport cannot be the same as departure.';
+    if (formData.fromAirport?.iata && formData.fromAirport?.iata === formData.toAirport?.iata) {
+      newErrors.toAirport = 'Arrival and departure airports cannot be the same.';
     }
     if (!formData.departureDate) newErrors.departureDate = 'Please select a flight date.';
     if (!formData.departureTime) newErrors.departureTime = 'Please select a departure time.';
@@ -55,272 +104,166 @@ function FlightInput({ onSubmit, onBack }) {
       setIsSubmitting(true);
       setTimeout(() => {
         onSubmit(formData);
-        // The parent component will handle navigation, no need to setIsSubmitting(false)
+        // No need to set isSubmitting to false if the parent component handles unmounting.
       }, 1500);
     }
   };
 
-  const preferences = [
-    { 
-      id: 'sunrise', 
-      icon: Sun, 
-      label: 'Sunrise', 
-      description: 'Catch the golden hour',
-      color: 'from-orange-500 to-yellow-500',
-      bgColor: 'from-orange-500/20 to-yellow-500/20'
-    },
-    { 
-      id: 'sunset', 
-      icon: Moon, 
-      label: 'Sunset', 
-      description: 'Watch the sky turn colors',
-      color: 'from-purple-500 to-pink-500',
-      bgColor: 'from-purple-500/20 to-pink-500/20'
-    },
-    { 
-      id: 'general', 
-      icon: Star, 
-      label: 'Best Views', 
-      description: 'Optimal viewing experience',
-      color: 'from-blue-500 to-indigo-500',
-      bgColor: 'from-blue-500/20 to-indigo-500/20'
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cyan-50 via-blue-50 to-teal-50 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-br from-cyan-200/20 to-blue-300/15 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-gradient-to-tr from-teal-200/20 to-green-300/15 rounded-full blur-2xl"></div>
-
-      <div className="container mx-auto px-6 py-8 relative z-10">
-        {/* Navigation */}
-        <div className="flex justify-between mb-8">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 to-slate-100 font-sans antialiased">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        
+        {/* Back Button */}
+        <div className="max-w-5xl mx-auto mb-6">
           <button 
-            className="flex items-center text-slate-600 hover:text-cyan-600 font-medium transition-colors group"
+            className="group flex items-center gap-2 text-slate-600 hover:text-cyan-600 font-semibold transition-colors duration-300"
             onClick={onBack}
           >
-            <ArrowLeft className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
-            Back to Home
+            <ArrowLeft className="w-5 h-5 transition-transform duration-300 group-hover:-translate-x-1" />
+            <span>Back to Home</span>
           </button>
         </div>
 
-        {/* Main Content */}
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="flex justify-center items-center mb-8 relative">
-              <div className="relative">
-                <div className="w-20 h-20 bg-white rounded-full shadow-2xl flex items-center justify-center ring-1 ring-cyan-100">
-                  <Plane className="w-10 h-10 text-cyan-500" />
-                </div>
-                <div className="absolute -top-1 -right-1 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                </div>
-              </div>
-            </div>
-            <h1 className="text-5xl font-bold mb-4 leading-tight">
-              <span className="text-slate-800">Plan Your</span>
-              <br />
-              <span className="bg-gradient-to-r from-cyan-500 via-blue-500 to-teal-500 bg-clip-text text-transparent">
-                Perfect Flight
-              </span>
-            </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              Tell us about your journey and we'll find you the most <strong className="text-slate-800">spectacular window seat</strong> experience
-            </p>
+        {/* Header */}
+        <header className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center justify-center w-24 h-24 mb-6 bg-white rounded-full shadow-lg">
+             <div className="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full">
+                <Plane className="w-10 h-10 text-white" />
+             </div>
           </div>
+          <h1 className="text-4xl md:text-6xl font-extrabold text-slate-800 leading-tight">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-600">
+              Plan Your Perfect Flight
+            </span>
+          </h1>
+          <p className="text-lg text-slate-500 mt-4">
+            Find the most spectacular window seat experience for your journey.
+          </p>
+        </header>
 
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-cyan-100 shadow-2xl">
-            <form onSubmit={handleSubmit} className="space-y-10">
-              {/* Airport Selection */}
-              <div className="space-y-6">
-                <div className="text-center mb-8">
-                  <div className="flex justify-center items-center mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <h2 className="text-2xl font-bold text-slate-800 mb-2">Choose Your Route</h2>
-                  <p className="text-slate-600">Select your departure and arrival airports</p>
+        {/* Form Container */}
+        <main className="max-w-5xl mx-auto">
+          <div className="bg-white rounded-3xl p-6 md:p-10 shadow-2xl shadow-cyan-100/50 border border-slate-200/80">
+            <form onSubmit={handleSubmit} className="space-y-16">
+
+              {/* Airport Selection Section */}
+              <FormSection
+                icon={MapPin}
+                title="Choose Your Route"
+                subtitle="Select departure and arrival airports"
+              >
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  <AirportSearch
+                    label="From"
+                    placeholder="e.g., JFK, Los Angeles"
+                    value={formData.fromAirport}
+                    onChange={(airport) => handleAirportChange(airport, 'fromAirport')}
+                    error={errors.fromAirport}
+                  />
+                  <AirportSearch
+                    label="To"
+                    placeholder="e.g., LAX, Tokyo"
+                    value={formData.toAirport}
+                    onChange={(airport) => handleAirportChange(airport, 'toAirport')}
+                    error={errors.toAirport}
+                  />
                 </div>
-                
+              </FormSection>
+
+              {/* Date and Time Section */}
+              <FormSection
+                icon={Calendar}
+                title="Flight Schedule"
+                subtitle="Tell us when you are flying"
+              >
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <AirportSearch
-                      label="From Airport"
-                      placeholder="e.g., JFK, Los Angeles..."
-                      name="fromAirport"
-                      value={formData.fromAirport}
-                      onChange={(airport) => handleAirportChange(airport, 'fromAirport')}
-                      hasError={!!errors.fromAirport}
-                    />
-                    {errors.fromAirport && <p className="text-red-500 text-sm mt-2 flex items-center">
-                      <div className="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></div>
-                      {errors.fromAirport}
-                    </p>}
-                  </div>
-
-                  <div className="space-y-2">
-                    <AirportSearch
-                      label="To Airport"
-                      placeholder="e.g., LAX, Tokyo Narita..."
-                      name="toAirport"
-                      value={formData.toAirport}
-                      onChange={(airport) => handleAirportChange(airport, 'toAirport')}
-                      hasError={!!errors.toAirport}
-                    />
-                    {errors.toAirport && <p className="text-red-500 text-sm mt-2 flex items-center">
-                      <div className="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></div>
-                      {errors.toAirport}
-                    </p>}
-                  </div>
-                </div>
-              </div>
-
-              {/* Date and Time */}
-              <div className="space-y-6">
-                <div className="text-center mb-8">
-                  <div className="flex justify-center items-center mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
-                      <Calendar className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <h2 className="text-2xl font-bold text-slate-800 mb-2">Flight Schedule</h2>
-                  <p className="text-slate-600">When are you flying?</p>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-700 mb-3 flex items-center">
-                      <Calendar className="w-4 h-4 mr-2 text-blue-500" />
-                      Flight Date
-                    </label>
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">Flight Date</label>
                     <input
                       type="date"
-                      className={`w-full px-4 py-4 bg-white/90 border-2 rounded-xl focus:ring-2 transition-all text-slate-800 placeholder-slate-400 ${
-                        errors.departureDate ? 'border-red-300 focus:ring-red-200 focus:border-red-400' : 'border-slate-200 focus:ring-cyan-200 focus:border-cyan-400 hover:border-slate-300'
-                      }`}
                       name="departureDate"
                       value={formData.departureDate}
                       onChange={handleInputChange}
                       min={today}
-                      required
+                      className={`w-full p-4 border rounded-xl transition duration-300 ${errors.departureDate ? 'border-red-400 bg-red-50' : 'border-slate-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/50'}`}
                     />
-                    {errors.departureDate && <p className="text-red-500 text-sm mt-2 flex items-center">
-                      <div className="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></div>
-                      {errors.departureDate}
-                    </p>}
+                    {errors.departureDate && <p className="text-red-600 text-sm mt-1">{errors.departureDate}</p>}
                   </div>
-                  
-                  <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-700 mb-3 flex items-center">
-                      <Clock className="w-4 h-4 mr-2 text-blue-500" />
-                      Departure Time
-                    </label>
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">Departure Time</label>
                     <input
                       type="time"
-                      className={`w-full px-4 py-4 bg-white/90 border-2 rounded-xl focus:ring-2 transition-all text-slate-800 placeholder-slate-400 ${
-                        errors.departureTime ? 'border-red-300 focus:ring-red-200 focus:border-red-400' : 'border-slate-200 focus:ring-cyan-200 focus:border-cyan-400 hover:border-slate-300'
-                      }`}
                       name="departureTime"
                       value={formData.departureTime}
                       onChange={handleInputChange}
-                      required
+                      className={`w-full p-4 border rounded-xl transition duration-300 ${errors.departureTime ? 'border-red-400 bg-red-50' : 'border-slate-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/50'}`}
                     />
-                    {errors.departureTime && <p className="text-red-500 text-sm mt-2 flex items-center">
-                      <div className="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></div>
-                      {errors.departureTime}
-                    </p>}
+                    {errors.departureTime && <p className="text-red-600 text-sm mt-1">{errors.departureTime}</p>}
                   </div>
                 </div>
-              </div>
+              </FormSection>
 
-              {/* View Preference */}
-              <div className="space-y-6">
-                <div className="text-center mb-8">
-                  <div className="flex justify-center items-center mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center">
-                      <Star className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <h2 className="text-2xl font-bold text-slate-800 mb-2">What would you like to see?</h2>
-                  <p className="text-slate-600">Choose your viewing preference for the best experience</p>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* View Preference Section */}
+              <FormSection
+                icon={Star}
+                title="Select Your View"
+                subtitle="Choose your preferred viewing experience"
+              >
+                <div className="grid sm:grid-cols-3 gap-4">
                   {preferences.map((pref) => {
                     const Icon = pref.icon;
+                    const isSelected = formData.viewPreference === pref.id;
                     return (
                       <button
                         key={pref.id}
                         type="button"
                         onClick={() => handlePreferenceChange(pref.id)}
-                        className={`group p-6 rounded-2xl border-2 transition-all text-left relative overflow-hidden transform hover:scale-105 ${
-                          formData.viewPreference === pref.id
-                            ? 'border-cyan-300 bg-gradient-to-br from-cyan-50 to-blue-50 text-slate-800 shadow-xl shadow-cyan-200/50'
-                            : 'border-slate-200 bg-white/90 text-slate-700 hover:border-cyan-200 hover:bg-cyan-50/50 hover:shadow-lg'
+                        className={`p-5 rounded-xl border-2 text-left transition-all duration-300 transform hover:scale-105 ${
+                          isSelected 
+                            ? 'border-cyan-500 bg-cyan-50 shadow-lg' 
+                            : 'border-slate-200 hover:border-cyan-400 hover:bg-slate-50'
                         }`}
                       >
-                        <div className="relative z-10">
-                          <div className="flex items-center mb-3">
-                            <div className={`p-3 rounded-xl bg-gradient-to-r ${pref.color} mr-3 group-hover:scale-110 transition-transform`}>
-                              <Icon className="w-6 h-6 text-white" />
-                            </div>
-                            <span className="font-bold text-lg">{pref.label}</span>
+                        <div className="flex items-center mb-2">
+                          <div className={`p-2 rounded-lg bg-gradient-to-r ${pref.color} mr-3 shadow-md`}>
+                            <Icon className="w-5 h-5 text-white" />
                           </div>
-                          <p className="text-sm opacity-75 leading-relaxed">{pref.description}</p>
+                          <span className="font-bold text-slate-800">{pref.label}</span>
                         </div>
-                        {formData.viewPreference === pref.id && (
-                          <div className="absolute top-4 right-4">
-                            <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center">
-                              <Sparkles className="w-4 h-4 text-white" />
-                            </div>
-                          </div>
-                        )}
+                        <p className="text-sm text-slate-500">{pref.description}</p>
                       </button>
                     );
                   })}
                 </div>
-              </div>
+              </FormSection>
 
               {/* Submit Button */}
-              <div className="text-center pt-8">
+              <div className="text-center pt-6 flex justify-center">
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="group px-12 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-lg rounded-2xl shadow-xl transform transition-all hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyan-200 flex items-center mx-auto disabled:opacity-70 disabled:cursor-not-allowed disabled:scale-100 hover:shadow-2xl"
+                  className="inline-flex items-center justify-center gap-3 px-12 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="w-6 h-6 mr-3 animate-spin" />
-                      <span>Processing Your Request...</span>
+                      <Loader2 className="animate-spin w-6 h-6" />
+                      <span>Processing...</span>
                     </>
                   ) : (
                     <>
-                      <Sparkles className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" />
-                      <span>Get My Perfect Seat Recommendation</span>
-                      <div className="w-2 h-2 bg-white rounded-full ml-3 animate-pulse"></div>
+                      <Sparkles className="w-6 h-6" />
+                      <span>Get Seat Recommendation</span>
                     </>
                   )}
                 </button>
-                <div className="flex flex-wrap justify-center items-center gap-6 text-slate-500 text-sm mt-6">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                    <span className="font-medium">AI-powered analysis</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="font-medium">Real-time sun tracking</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
-                    <span className="font-medium">Global airport database</span>
-                  </div>
-                </div>
               </div>
             </form>
           </div>
-        </div>
+        </main>
+        
+        <footer className="text-center mt-12">
+            <p className="text-slate-500">Powered by Gemini</p>
+        </footer>
       </div>
     </div>
   );

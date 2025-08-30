@@ -89,7 +89,8 @@ router.post('/recommendation', async (req, res) => {
     //       seatSide: point.aiRecommendation.seatSide,
     //       reason: point.aiRecommendation.reason,
     //       viewScore: point.aiRecommendation.viewScore,
-    //       specialCondition: point.aiRecommendation.specialCondition
+    //       specialCondition: point.aiRecommendation.specialCondition,
+    //       location: point.aiRecommendation.location
     //     }
     //   })),
     //   // Metadata
@@ -97,7 +98,7 @@ router.post('/recommendation', async (req, res) => {
     //     analysisMethod: 'AI-powered 100-point analysis',
     //     totalPointsAnalyzed: seatRecommendation.aiAnalysis.totalPointsAnalyzed,
     //     overallScore: seatRecommendation.aiAnalysis.overallScore
-      // }
+    //   }
     // });
   } catch (error) {
     console.error('AI recommendation error:', error);

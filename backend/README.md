@@ -32,7 +32,7 @@ npm start
 
 ### Flight Endpoints
 - `POST /api/flight/recommendation` - Get seat recommendation  
-- `POST /api/flight/route` - Get flight route for visualization
+- `POST /api/flight/route` - Get flight route information
 
 ### Sun Endpoints
 - `POST /api/sun/position` - Calculate sun position

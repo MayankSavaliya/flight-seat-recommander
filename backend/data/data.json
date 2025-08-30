@@ -1,33 +1,26 @@
 {
     "success": true,
     "finalRecommendation": {
-        "side": "right",
-        "reason": "Choose a seat on the **right** side of the aircraft. The breathtaking view of the Las Vegas Strip from the air at night is the premier visual event of this flight and decisively outweighs the views offered on the left.",
+        "side": "left",
+        "reason": "Choose a seat on the LEFT side of the aircraft. This flight offers an exceptional and prolonged sunset viewing opportunity for the majority of the journey. You will have an uninterrupted view of the sun setting as you fly west across the United States.",
         "confidence": "high",
-        "overallScore": 8,
+        "overallScore": 9,
         "bestViewingPeriods": [
             {
-                "startPercent": 25,
-                "endPercent": 35,
-                "description": "Look for the massive, distant glow of the Chicago metropolitan area to the north."
+                "startPercent": 0,
+                "endPercent": 12,
+                "description": "Golden Hour views during ascent and over the Eastern US."
             },
             {
-                "startPercent": 55,
-                "endPercent": 65,
-                "description": "A clear view of the Denver city lights on the plains before crossing the Rocky Mountains."
-            },
-            {
-                "startPercent": 86,
-                "endPercent": 92,
-                "description": "The key highlight: A brilliant and direct view of the Las Vegas Strip lighting up the desert."
+                "startPercent": 12,
+                "endPercent": 69,
+                "description": "A spectacular, extended sunset that progresses as the flight crosses the Midwest, the Great Plains, and the Rocky Mountains."
             }
         ],
         "specialHighlights": [
-            "Distant view of Chicago's light dome",
-            "Denver metro area lights",
-            "Exceptional stargazing over the Rocky Mountains and Arizona",
-            "Spectacular, direct view of the Las Vegas Strip",
-            "Expansive city lights on approach (better from left, but visible from right)"
+            "Continuous sunset view for over half the flight.",
+            "Sun remains on the left side, no switching.",
+            "Flight path offers a chance to see the sunset transition from Golden Hour to twilight over diverse American landscapes."
         ]
     },
     "flightDetails": {
@@ -39,7 +32,7 @@
             "latitude": 34.0522,
             "longitude": -118.2437
         },
-        "departureTime": "2024-01-15T02:30:00.000Z",
+        "departureTime": "2024-01-14T21:00:00.000Z",
         "flightDuration": {
             "hours": 4,
             "minutes": 22,
@@ -457,18 +450,19 @@
                 40.7128,
                 -74.006
             ],
-            "time": "2024-01-15T02:30:00.000Z",
+            "time": "2024-01-14T21:00:00.000Z",
             "flightBearing": -86,
             "sun": {
-                "azimuth": 288.69,
-                "altitude": -51.9,
-                "visible": false
+                "azimuth": 233.35,
+                "altitude": 7.45,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "During departure from the NYC area, the flight heads west. A left-side seat offers the best potential to see the Manhattan skyline and the dense city lights of New York and New Jersey.",
-                "viewScore": 8,
-                "specialCondition": "Night flight. View is of city lights."
+                "reason": "Sun is visible on the left (relative angle: -41°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "New York City, NY, USA"
             }
         },
         {
@@ -478,18 +472,19 @@
                 40.73483541734273,
                 -74.47685826710125
             ],
-            "time": "2024-01-15T02:32:38.787Z",
+            "time": "2024-01-14T21:02:38.787Z",
             "flightBearing": -87,
             "sun": {
-                "azimuth": 288.9,
-                "altitude": -52.03,
-                "visible": false
+                "azimuth": 233.48,
+                "altitude": 7.32,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Flying over central Pennsylvania. Views will be limited to smaller towns and infrastructure. The left side looks south towards Harrisburg in the distance.",
-                "viewScore": 3,
-                "specialCondition": "Night flight over rural/suburban areas."
+                "reason": "Sun is visible on the left (relative angle: -40°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Near Newark, NJ, USA"
             }
         },
         {
@@ -499,18 +494,19 @@
                 40.75495624552998,
                 -74.94801497848029
             ],
-            "time": "2024-01-15T02:35:17.575Z",
+            "time": "2024-01-14T21:05:17.575Z",
             "flightBearing": -87,
             "sun": {
-                "azimuth": 289.11,
-                "altitude": -52.16,
-                "visible": false
+                "azimuth": 233.62,
+                "altitude": 7.2,
+                "visible": true
             },
             "recommendation": {
-                "seatSide": "right",
-                "reason": "The flight path is crossing Ohio, south of the major cities along Lake Erie. A right-side seat may offer a distant view of the glow from Cleveland.",
-                "viewScore": 4,
-                "specialCondition": "Night flight. Views are of distant city glows."
+                "seatSide": "left",
+                "reason": "Sun is visible on the left (relative angle: -39°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Eastern Pennsylvania, USA"
             }
         },
         {
@@ -520,18 +516,19 @@
                 40.773159964850535,
                 -75.41944336477499
             ],
-            "time": "2024-01-15T02:37:56.363Z",
+            "time": "2024-01-14T21:07:56.363Z",
             "flightBearing": -87,
             "sun": {
-                "azimuth": 289.32,
-                "altitude": -52.29,
-                "visible": false
+                "azimuth": 233.75,
+                "altitude": 7.07,
+                "visible": true
             },
             "recommendation": {
-                "seatSide": "right",
-                "reason": "Crossing Indiana and Illinois. The flight path passes well south of Chicago, making the right side the ideal choice for seeing the massive light dome of the Chicago metropolitan area.",
-                "viewScore": 6,
-                "specialCondition": "Night flight. View is of a very large, distant city."
+                "seatSide": "left",
+                "reason": "Sun is visible on the left (relative angle: -39°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Central Pennsylvania, USA"
             }
         },
         {
@@ -541,18 +538,19 @@
                 40.78944429222629,
                 -75.8911165209573
             ],
-            "time": "2024-01-15T02:40:35.151Z",
+            "time": "2024-01-14T21:10:35.151Z",
             "flightBearing": -88,
             "sun": {
-                "azimuth": 289.53,
-                "altitude": -52.42,
-                "visible": false
+                "azimuth": 233.88,
+                "altitude": 6.95,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "The flight path crosses over Missouri, north of St. Louis but relatively close to Kansas City. The left side will provide a better view of the Kansas City metro area lights.",
-                "viewScore": 5,
-                "specialCondition": "Night flight over a mid-sized metropolitan area."
+                "reason": "Sun is visible on the left (relative angle: -38°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Central Pennsylvania, USA"
             }
         },
         {
@@ -562,18 +560,19 @@
                 40.80380718252774,
                 -76.36300741950481
             ],
-            "time": "2024-01-15T02:43:13.939Z",
+            "time": "2024-01-14T21:13:13.939Z",
             "flightBearing": -88,
             "sun": {
-                "azimuth": 289.73,
-                "altitude": -52.55,
-                "visible": false
+                "azimuth": 234.02,
+                "altitude": 6.82,
+                "visible": true
             },
             "recommendation": {
-                "seatSide": "right",
-                "reason": "Flying over Kansas. The terrain is flat and sparsely populated. The flight path passes south of Omaha/Lincoln, so any distant glow would be on the right.",
-                "viewScore": 2,
-                "specialCondition": "Night flight over sparsely populated plains."
+                "seatSide": "left",
+                "reason": "Sun is visible on the left (relative angle: -38°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Appalachian Mountains, PA, USA"
             }
         },
         {
@@ -583,18 +582,19 @@
                 40.81624682975536,
                 -76.83508892371617
             ],
-            "time": "2024-01-15T02:45:52.727Z",
+            "time": "2024-01-14T21:15:52.727Z",
             "flightBearing": -88,
             "sun": {
-                "azimuth": 289.94,
-                "altitude": -52.68,
-                "visible": false
+                "azimuth": 234.15,
+                "altitude": 6.7,
+                "visible": true
             },
             "recommendation": {
-                "seatSide": "right",
-                "reason": "Approaching the Rocky Mountains and flying over Colorado. The flight path is south of Denver. A right-side seat will offer a clear view of the Denver-Aurora metropolitan area lights against the dark backdrop of the plains.",
-                "viewScore": 7,
-                "specialCondition": "Night flight with a major city view."
+                "seatSide": "left",
+                "reason": "Sun is visible on the left (relative angle: -38°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Western Pennsylvania, USA"
             }
         },
         {
@@ -604,18 +604,19 @@
                 40.82676166808501,
                 -77.3073338011551
             ],
-            "time": "2024-01-15T02:48:31.515Z",
+            "time": "2024-01-14T21:18:31.515Z",
             "flightBearing": -88,
             "sun": {
-                "azimuth": 290.14,
-                "altitude": -52.81,
-                "visible": false
+                "azimuth": 234.28,
+                "altitude": 6.58,
+                "visible": true
             },
             "recommendation": {
-                "seatSide": "right",
-                "reason": "Flying over the Rocky Mountains in southern Colorado/northern New Mexico. This area is extremely dark, providing an excellent opportunity for stargazing from either side. The right side looks north towards more national parks and dark sky areas.",
-                "viewScore": 3,
-                "specialCondition": "Excellent stargazing opportunity due to low light pollution."
+                "seatSide": "left",
+                "reason": "Sun is visible on the left (relative angle: -37°). Golden Hour conditions (sun altitude: 7°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Near Pittsburgh, PA, USA"
             }
         },
         {
@@ -625,18 +626,19 @@
                 40.83535037277614,
                 -77.77971473720727
             ],
-            "time": "2024-01-15T02:51:10.303Z",
+            "time": "2024-01-14T21:21:10.303Z",
             "flightBearing": -89,
             "sun": {
-                "azimuth": 290.34,
-                "altitude": -52.94,
-                "visible": false
+                "azimuth": 234.41,
+                "altitude": 6.45,
+                "visible": true
             },
             "recommendation": {
-                "seatSide": "right",
-                "reason": "The flight path crosses northern Arizona, a region with significant dark sky preserves. The right side looks towards the Grand Canyon and southern Utah, offering spectacular stargazing.",
-                "viewScore": 3,
-                "specialCondition": "Prime stargazing segment of the flight."
+                "seatSide": "left",
+                "reason": "Sun is visible on the left (relative angle: -37°). Golden Hour conditions (sun altitude: 6°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Western Pennsylvania, USA"
             }
         },
         {
@@ -646,18 +648,19 @@
                 40.84201186094126,
                 -78.2522043487345
             ],
-            "time": "2024-01-15T02:53:49.090Z",
+            "time": "2024-01-14T21:23:49.090Z",
             "flightBearing": -89,
             "sun": {
-                "azimuth": 290.54,
-                "altitude": -53.07,
-                "visible": false
+                "azimuth": 234.55,
+                "altitude": 6.33,
+                "visible": true
             },
             "recommendation": {
-                "seatSide": "right",
-                "reason": "This is the highlight of the flight. The path passes south of Las Vegas. A right-side seat is absolutely essential for a spectacular view of the brilliantly lit Las Vegas Strip and city in the middle of the dark Mojave Desert.",
-                "viewScore": 10,
-                "specialCondition": "Unobstructed view of the Las Vegas strip at night."
+                "seatSide": "left",
+                "reason": "Sun is visible on the left (relative angle: -36°). Golden Hour conditions (sun altitude: 6°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Near Ohio Border, USA"
             }
         },
         {
@@ -667,18 +670,19 @@
                 40.84674529217595,
                 -78.72477519781013
             ],
-            "time": "2024-01-15T02:56:27.878Z",
+            "time": "2024-01-14T21:26:27.878Z",
             "flightBearing": -89,
             "sun": {
-                "azimuth": 290.73,
-                "altitude": -53.2,
-                "visible": false
+                "azimuth": 234.68,
+                "altitude": 6.22,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "On approach to Los Angeles from the northeast. A left-side seat will provide an expansive view of the sprawling lights of the San Gabriel Valley and the greater Los Angeles basin as the plane descends.",
+                "reason": "Sun is visible on the left (relative angle: -36°). Golden Hour conditions (sun altitude: 6°).",
                 "viewScore": 9,
-                "specialCondition": "Night approach over one of the world's largest urban areas."
+                "specialCondition": "Golden Hour",
+                "location": "Eastern Ohio, USA"
             }
         },
         {
@@ -688,18 +692,19 @@
                 40.849550069048114,
                 -79.19739980551957
             ],
-            "time": "2024-01-15T02:59:06.666Z",
+            "time": "2024-01-14T21:29:06.666Z",
             "flightBearing": -90,
             "sun": {
-                "azimuth": 290.93,
-                "altitude": -53.33,
-                "visible": false
+                "azimuth": 234.81,
+                "altitude": 6.1,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -35°). Golden Hour conditions (sun altitude: 6°).",
+                "viewScore": 9,
+                "specialCondition": "Golden Hour",
+                "location": "Eastern Ohio, USA"
             }
         },
         {
@@ -709,18 +714,19 @@
                 40.85042583744627,
                 -79.67005066580926
             ],
-            "time": "2024-01-15T03:01:45.454Z",
+            "time": "2024-01-14T21:31:45.454Z",
             "flightBearing": -90,
             "sun": {
-                "azimuth": 291.12,
-                "altitude": -53.47,
-                "visible": false
+                "azimuth": 234.94,
+                "altitude": 5.98,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -35°). Sunset in progress (sun altitude: 6°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Columbus, OH, USA"
             }
         },
         {
@@ -730,18 +736,19 @@
                 40.84937248678594,
                 -80.14270025936818
             ],
-            "time": "2024-01-15T03:04:24.242Z",
+            "time": "2024-01-14T21:34:24.242Z",
             "flightBearing": -90,
             "sun": {
-                "azimuth": 291.31,
-                "altitude": -53.6,
-                "visible": false
+                "azimuth": 235.08,
+                "altitude": 5.86,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -35°). Sunset in progress (sun altitude: 6°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Ohio, USA"
             }
         },
         {
@@ -751,18 +758,19 @@
                 40.84639015007422,
                 -80.61532106752516
             ],
-            "time": "2024-01-15T03:07:03.030Z",
+            "time": "2024-01-14T21:37:03.030Z",
             "flightBearing": -91,
             "sun": {
-                "azimuth": 291.51,
-                "altitude": -53.73,
-                "visible": false
+                "azimuth": 235.21,
+                "altitude": 5.75,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -34°). Sunset in progress (sun altitude: 6°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Ohio, USA"
             }
         },
         {
@@ -772,18 +780,19 @@
                 40.841479203832144,
                 -81.08788558614513
             ],
-            "time": "2024-01-15T03:09:41.818Z",
+            "time": "2024-01-14T21:39:41.818Z",
             "flightBearing": -91,
             "sun": {
-                "azimuth": 291.7,
-                "altitude": -53.87,
-                "visible": false
+                "azimuth": 235.34,
+                "altitude": 5.64,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -34°). Sunset in progress (sun altitude: 6°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Indiana Border, USA"
             }
         },
         {
@@ -793,18 +802,19 @@
                 40.834640267875194,
                 -81.56036633950849
             ],
-            "time": "2024-01-15T03:12:20.606Z",
+            "time": "2024-01-14T21:42:20.606Z",
             "flightBearing": -91,
             "sun": {
-                "azimuth": 291.88,
-                "altitude": -54,
-                "visible": false
+                "azimuth": 235.47,
+                "altitude": 5.52,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -33°). Sunset in progress (sun altitude: 6°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Indiana, USA"
             }
         },
         {
@@ -814,18 +824,19 @@
                 40.82587420495207,
                 -82.03273589415622
             ],
-            "time": "2024-01-15T03:14:59.393Z",
+            "time": "2024-01-14T21:44:59.393Z",
             "flightBearing": -92,
             "sun": {
-                "azimuth": 292.07,
-                "altitude": -54.14,
-                "visible": false
+                "azimuth": 235.6,
+                "altitude": 5.41,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -33°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Indianapolis, IN, USA"
             }
         },
         {
@@ -835,18 +846,19 @@
                 40.81518212024236,
                 -82.50496687268524
             ],
-            "time": "2024-01-15T03:17:38.181Z",
+            "time": "2024-01-14T21:47:38.181Z",
             "flightBearing": -92,
             "sun": {
-                "azimuth": 292.26,
-                "altitude": -54.28,
-                "visible": false
+                "azimuth": 235.74,
+                "altitude": 5.3,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -32°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Indiana, USA"
             }
         },
         {
@@ -856,18 +868,19 @@
                 40.80256536071374,
                 -82.97703196747682
             ],
-            "time": "2024-01-15T03:20:16.969Z",
+            "time": "2024-01-14T21:50:16.969Z",
             "flightBearing": -92,
             "sun": {
-                "azimuth": 292.44,
-                "altitude": -54.41,
-                "visible": false
+                "azimuth": 235.87,
+                "altitude": 5.19,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -32°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Indiana, USA"
             }
         },
         {
@@ -877,18 +890,19 @@
                 40.78802551433961,
                 -83.44890395434254
             ],
-            "time": "2024-01-15T03:22:55.757Z",
+            "time": "2024-01-14T21:52:55.757Z",
             "flightBearing": -92,
             "sun": {
-                "azimuth": 292.62,
-                "altitude": -54.55,
-                "visible": false
+                "azimuth": 236,
+                "altitude": 5.08,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -32°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Illinois Border, USA"
             }
         },
         {
@@ -898,18 +912,19 @@
                 40.77156440917827,
                 -83.92055570607151
             ],
-            "time": "2024-01-15T03:25:34.545Z",
+            "time": "2024-01-14T21:55:34.545Z",
             "flightBearing": -93,
             "sun": {
-                "azimuth": 292.8,
-                "altitude": -54.69,
-                "visible": false
+                "azimuth": 236.13,
+                "altitude": 4.97,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -31°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Illinois, USA"
             }
         },
         {
@@ -919,18 +934,19 @@
                 40.753184112314884,
                 -84.39196020586309
             ],
-            "time": "2024-01-15T03:28:13.333Z",
+            "time": "2024-01-14T21:58:13.333Z",
             "flightBearing": -93,
             "sun": {
-                "azimuth": 292.98,
-                "altitude": -54.83,
-                "visible": false
+                "azimuth": 236.27,
+                "altitude": 4.86,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -31°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Illinois, USA"
             }
         },
         {
@@ -940,18 +956,19 @@
                 40.73288692866772,
                 -84.86309056062976
             ],
-            "time": "2024-01-15T03:30:52.121Z",
+            "time": "2024-01-14T22:00:52.121Z",
             "flightBearing": -93,
             "sun": {
-                "azimuth": 293.16,
-                "altitude": -54.97,
-                "visible": false
+                "azimuth": 236.4,
+                "altitude": 4.75,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible on the left (relative angle: -30°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Springfield, IL, USA"
             }
         },
         {
@@ -961,18 +978,19 @@
                 40.71067539966033,
                 -85.33392001415464
             ],
-            "time": "2024-01-15T03:33:30.909Z",
+            "time": "2024-01-14T22:03:30.909Z",
             "flightBearing": -94,
             "sun": {
-                "azimuth": 293.34,
-                "altitude": -55.11,
-                "visible": false
+                "azimuth": 236.53,
+                "altitude": 4.64,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -30°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Illinois, USA"
             }
         },
         {
@@ -982,18 +1000,19 @@
                 40.686552301761424,
                 -85.80442196008921
             ],
-            "time": "2024-01-15T03:36:09.696Z",
+            "time": "2024-01-14T22:06:09.696Z",
             "flightBearing": -94,
             "sun": {
-                "azimuth": 293.51,
-                "altitude": -55.25,
-                "visible": false
+                "azimuth": 236.66,
+                "altitude": 4.53,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -29°). Sunset in progress (sun altitude: 5°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Mississippi River, USA"
             }
         },
         {
@@ -1003,18 +1022,19 @@
                 40.66052064489447,
                 -86.27456995477613
             ],
-            "time": "2024-01-15T03:38:48.484Z",
+            "time": "2024-01-14T22:08:48.484Z",
             "flightBearing": -94,
             "sun": {
-                "azimuth": 293.69,
-                "altitude": -55.4,
-                "visible": false
+                "azimuth": 236.8,
+                "altitude": 4.43,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -29°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Missouri, USA"
             }
         },
         {
@@ -1024,18 +1044,19 @@
                 40.632583670719264,
                 -86.74433772988328
             ],
-            "time": "2024-01-15T03:41:27.272Z",
+            "time": "2024-01-14T22:11:27.272Z",
             "flightBearing": -95,
             "sun": {
-                "azimuth": 293.86,
-                "altitude": -55.54,
-                "visible": false
+                "azimuth": 236.93,
+                "altitude": 4.32,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -28°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Missouri, USA"
             }
         },
         {
@@ -1045,18 +1066,19 @@
                 40.60274485078768,
                 -87.21369920483552
             ],
-            "time": "2024-01-15T03:44:06.060Z",
+            "time": "2024-01-14T22:14:06.060Z",
             "flightBearing": -95,
             "sun": {
-                "azimuth": 294.03,
-                "altitude": -55.69,
-                "visible": false
+                "azimuth": 237.06,
+                "altitude": 4.21,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -28°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Missouri, USA"
             }
         },
         {
@@ -1066,18 +1088,19 @@
                 40.5710078845761,
                 -87.68262849903007
             ],
-            "time": "2024-01-15T03:46:44.848Z",
+            "time": "2024-01-14T22:16:44.848Z",
             "flightBearing": -95,
             "sun": {
-                "azimuth": 294.21,
-                "altitude": -55.83,
-                "visible": false
+                "azimuth": 237.2,
+                "altitude": 4.11,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -27°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Kansas City, MO, USA"
             }
         },
         {
@@ -1087,18 +1110,19 @@
                 40.53737669739735,
                 -88.1510999438235
             ],
-            "time": "2024-01-15T03:49:23.636Z",
+            "time": "2024-01-14T22:19:23.636Z",
             "flightBearing": -96,
             "sun": {
-                "azimuth": 294.38,
-                "altitude": -55.98,
-                "visible": false
+                "azimuth": 237.33,
+                "altitude": 4,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -27°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Kansas, USA"
             }
         },
         {
@@ -1108,18 +1132,19 @@
                 40.50185543819462,
                 -88.61908809427737
             ],
-            "time": "2024-01-15T03:52:02.424Z",
+            "time": "2024-01-14T22:22:02.424Z",
             "flightBearing": -96,
             "sun": {
-                "azimuth": 294.54,
-                "altitude": -56.13,
-                "visible": false
+                "azimuth": 237.46,
+                "altitude": 3.9,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -26°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Kansas, USA"
             }
         },
         {
@@ -1129,18 +1154,19 @@
                 40.46444847722057,
                 -89.08656774065082
             ],
-            "time": "2024-01-15T03:54:41.212Z",
+            "time": "2024-01-14T22:24:41.212Z",
             "flightBearing": -96,
             "sun": {
-                "azimuth": 294.71,
-                "altitude": -56.28,
-                "visible": false
+                "azimuth": 237.6,
+                "altitude": 3.79,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -26°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Flint Hills, KS, USA"
             }
         },
         {
@@ -1150,18 +1176,19 @@
                 40.425160403604586,
                 -89.55351391962884
             ],
-            "time": "2024-01-15T03:57:20.000Z",
+            "time": "2024-01-14T22:27:20.000Z",
             "flightBearing": -96,
             "sun": {
-                "azimuth": 294.88,
-                "altitude": -56.43,
-                "visible": false
+                "azimuth": 237.73,
+                "altitude": 3.69,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -26°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Kansas, USA"
             }
         },
         {
@@ -1171,18 +1198,19 @@
                 40.38399602281126,
                 -90.01990192527533
             ],
-            "time": "2024-01-15T03:59:58.787Z",
+            "time": "2024-01-14T22:29:58.787Z",
             "flightBearing": -97,
             "sun": {
-                "azimuth": 295.04,
-                "altitude": -56.58,
-                "visible": false
+                "azimuth": 237.86,
+                "altitude": 3.59,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -25°). Sunset in progress (sun altitude: 4°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Kansas, USA"
             }
         },
         {
@@ -1192,18 +1220,19 @@
                 40.34096035399363,
                 -90.48570731970065
             ],
-            "time": "2024-01-15T04:02:37.575Z",
+            "time": "2024-01-14T22:32:37.575Z",
             "flightBearing": -97,
             "sun": {
-                "azimuth": 295.21,
-                "altitude": -56.73,
-                "visible": false
+                "azimuth": 238,
+                "altitude": 3.48,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -25°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Kansas, USA"
             }
         },
         {
@@ -1213,18 +1242,19 @@
                 40.29605862724435,
                 -90.95090594343414
             ],
-            "time": "2024-01-15T04:05:16.363Z",
+            "time": "2024-01-14T22:35:16.363Z",
             "flightBearing": -97,
             "sun": {
-                "azimuth": 295.37,
-                "altitude": -56.89,
-                "visible": false
+                "azimuth": 238.13,
+                "altitude": 3.38,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -24°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Kansas, USA"
             }
         },
         {
@@ -1234,18 +1264,19 @@
                 40.249296280748524,
                 -91.41547392549249
             ],
-            "time": "2024-01-15T04:07:55.151Z",
+            "time": "2024-01-14T22:37:55.151Z",
             "flightBearing": -98,
             "sun": {
-                "azimuth": 295.53,
-                "altitude": -57.04,
-                "visible": false
+                "azimuth": 238.27,
+                "altitude": 3.28,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -24°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Kansas, USA"
             }
         },
         {
@@ -1255,18 +1286,19 @@
                 40.20067895784161,
                 -91.87938769313553
             ],
-            "time": "2024-01-15T04:10:33.939Z",
+            "time": "2024-01-14T22:40:33.939Z",
             "flightBearing": -98,
             "sun": {
-                "azimuth": 295.69,
-                "altitude": -57.2,
-                "visible": false
+                "azimuth": 238.4,
+                "altitude": 3.18,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -23°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Kansas, USA"
             }
         },
         {
@@ -1276,18 +1308,19 @@
                 40.15021250397632,
                 -92.34262398130139
             ],
-            "time": "2024-01-15T04:13:12.727Z",
+            "time": "2024-01-14T22:43:12.727Z",
             "flightBearing": -98,
             "sun": {
-                "azimuth": 295.85,
-                "altitude": -57.36,
-                "visible": false
+                "azimuth": 238.54,
+                "altitude": 3.07,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -23°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Colorado Border, USA"
             }
         },
         {
@@ -1297,18 +1330,19 @@
                 40.097902963602095,
                 -92.80515984171426
             ],
-            "time": "2024-01-15T04:15:51.515Z",
+            "time": "2024-01-14T22:45:51.515Z",
             "flightBearing": -99,
             "sun": {
-                "azimuth": 296.01,
-                "altitude": -57.52,
-                "visible": false
+                "azimuth": 238.67,
+                "altitude": 2.97,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -22°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Colorado, USA"
             }
         },
         {
@@ -1318,18 +1352,19 @@
                 40.04375657696104,
                 -93.26697265165768
             ],
-            "time": "2024-01-15T04:18:30.303Z",
+            "time": "2024-01-14T22:48:30.303Z",
             "flightBearing": -99,
             "sun": {
-                "azimuth": 296.17,
-                "altitude": -57.68,
-                "visible": false
+                "azimuth": 238.81,
+                "altitude": 2.87,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -22°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Plains, CO, USA"
             }
         },
         {
@@ -1339,18 +1374,19 @@
                 39.98777977680441,
                 -93.72804012240776
             ],
-            "time": "2024-01-15T04:21:09.090Z",
+            "time": "2024-01-14T22:51:09.090Z",
             "flightBearing": -99,
             "sun": {
-                "azimuth": 296.33,
-                "altitude": -57.84,
-                "visible": false
+                "azimuth": 238.94,
+                "altitude": 2.77,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -21°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Plains, CO, USA"
             }
         },
         {
@@ -1360,18 +1396,19 @@
                 39.92997918503341,
                 -94.18834030732073
             ],
-            "time": "2024-01-15T04:23:47.878Z",
+            "time": "2024-01-14T22:53:47.878Z",
             "flightBearing": -99,
             "sun": {
-                "azimuth": 296.48,
-                "altitude": -58,
-                "visible": false
+                "azimuth": 239.08,
+                "altitude": 2.66,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -21°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Colorado, USA"
             }
         },
         {
@@ -1381,18 +1418,19 @@
                 39.87036160926833,
                 -94.64785160957045
             ],
-            "time": "2024-01-15T04:26:26.666Z",
+            "time": "2024-01-14T22:56:26.666Z",
             "flightBearing": -100,
             "sun": {
-                "azimuth": 296.64,
-                "altitude": -58.17,
-                "visible": false
+                "azimuth": 239.21,
+                "altitude": 2.56,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -21°). Sunset in progress (sun altitude: 3°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Colorado, USA"
             }
         },
         {
@@ -1402,18 +1440,19 @@
                 39.808934039350255,
                 -95.10655278953158
             ],
-            "time": "2024-01-15T04:29:05.454Z",
+            "time": "2024-01-14T22:59:05.454Z",
             "flightBearing": -100,
             "sun": {
-                "azimuth": 296.79,
-                "altitude": -58.33,
-                "visible": false
+                "azimuth": 239.35,
+                "altitude": 2.46,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -20°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Colorado, USA"
             }
         },
         {
@@ -1423,18 +1462,19 @@
                 39.74570364377919,
                 -95.56442297180506
             ],
-            "time": "2024-01-15T04:31:44.242Z",
+            "time": "2024-01-14T23:01:44.242Z",
             "flightBearing": -100,
             "sun": {
-                "azimuth": 296.95,
-                "altitude": -58.5,
-                "visible": false
+                "azimuth": 239.49,
+                "altitude": 2.36,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -20°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Denver, CO, USA"
             }
         },
         {
@@ -1444,18 +1484,19 @@
                 39.68067776609293,
                 -96.0214416518833
             ],
-            "time": "2024-01-15T04:34:23.030Z",
+            "time": "2024-01-14T23:04:23.030Z",
             "flightBearing": -101,
             "sun": {
-                "azimuth": 297.1,
-                "altitude": -58.67,
-                "visible": false
+                "azimuth": 239.62,
+                "altitude": 2.25,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -19°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Front Range, CO, USA"
             }
         },
         {
@@ -1465,18 +1506,19 @@
                 39.61386392119057,
                 -96.4775887024526
             ],
-            "time": "2024-01-15T04:37:01.818Z",
+            "time": "2024-01-14T23:07:01.818Z",
             "flightBearing": -101,
             "sun": {
-                "azimuth": 297.25,
-                "altitude": -58.84,
-                "visible": false
+                "azimuth": 239.76,
+                "altitude": 2.15,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -19°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Rocky Mountains, CO, USA"
             }
         },
         {
@@ -1486,18 +1528,19 @@
                 39.54526979160505,
                 -96.93284437933168
             ],
-            "time": "2024-01-15T04:39:40.606Z",
+            "time": "2024-01-14T23:09:40.606Z",
             "flightBearing": -101,
             "sun": {
-                "azimuth": 297.41,
-                "altitude": -59.02,
-                "visible": false
+                "azimuth": 239.89,
+                "altitude": 2.05,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -18°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Rocky Mountains, CO, USA"
             }
         },
         {
@@ -1507,18 +1550,19 @@
                 39.47490322372851,
                 -97.38718932704478
             ],
-            "time": "2024-01-15T04:42:19.393Z",
+            "time": "2024-01-14T23:12:19.393Z",
             "flightBearing": -101,
             "sun": {
-                "azimuth": 297.56,
-                "altitude": -59.19,
-                "visible": false
+                "azimuth": 240.03,
+                "altitude": 1.95,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -18°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Rocky Mountains, CO, USA"
             }
         },
         {
@@ -1528,18 +1572,19 @@
                 39.40277222399496,
                 -97.84060458402973
             ],
-            "time": "2024-01-15T04:44:58.181Z",
+            "time": "2024-01-14T23:14:58.181Z",
             "flightBearing": -102,
             "sun": {
-                "azimuth": 297.71,
-                "altitude": -59.36,
-                "visible": false
+                "azimuth": 240.17,
+                "altitude": 1.84,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -17°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Colorado, USA"
             }
         },
         {
@@ -1549,18 +1594,19 @@
                 39.328884955023995,
                 -98.29307158748072
             ],
-            "time": "2024-01-15T04:47:36.969Z",
+            "time": "2024-01-14T23:17:36.969Z",
             "flightBearing": -102,
             "sun": {
-                "azimuth": 297.86,
-                "altitude": -59.54,
-                "visible": false
+                "azimuth": 240.31,
+                "altitude": 1.74,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -16°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Western Colorado, USA"
             }
         },
         {
@@ -1570,18 +1616,19 @@
                 39.253249731729994,
                 -98.74457217782657
             ],
-            "time": "2024-01-15T04:50:15.757Z",
+            "time": "2024-01-14T23:20:15.757Z",
             "flightBearing": -102,
             "sun": {
-                "azimuth": 298.01,
-                "altitude": -59.72,
-                "visible": false
+                "azimuth": 240.44,
+                "altitude": 1.64,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -16°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Utah Border, USA"
             }
         },
         {
@@ -1591,18 +1638,19 @@
                 39.17587501740052,
                 -99.19508860284621
             ],
-            "time": "2024-01-15T04:52:54.545Z",
+            "time": "2024-01-14T23:22:54.545Z",
             "flightBearing": -103,
             "sun": {
-                "azimuth": 298.16,
-                "altitude": -59.9,
-                "visible": false
+                "azimuth": 240.58,
+                "altitude": 1.53,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -15°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Eastern Utah, USA"
             }
         },
         {
@@ -1612,18 +1660,19 @@
                 39.09676941974814,
                 -99.64460352142308
             ],
-            "time": "2024-01-15T04:55:33.333Z",
+            "time": "2024-01-14T23:25:33.333Z",
             "flightBearing": -103,
             "sun": {
-                "azimuth": 298.3,
-                "altitude": -60.08,
-                "visible": false
+                "azimuth": 240.72,
+                "altitude": 1.43,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -15°). Sunset in progress (sun altitude: 2°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Canyonlands Region, UT, USA"
             }
         },
         {
@@ -1633,18 +1682,19 @@
                 39.01594168693958,
                 -100.09310000694077
             ],
-            "time": "2024-01-15T04:58:12.121Z",
+            "time": "2024-01-14T23:28:12.121Z",
             "flightBearing": -103,
             "sun": {
-                "azimuth": 298.45,
-                "altitude": -60.27,
-                "visible": false
+                "azimuth": 240.86,
+                "altitude": 1.32,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -14°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Utah, USA"
             }
         },
         {
@@ -1654,18 +1704,19 @@
                 38.933400703606104,
                 -100.54056155032306
             ],
-            "time": "2024-01-15T05:00:50.909Z",
+            "time": "2024-01-14T23:30:50.909Z",
             "flightBearing": -103,
             "sun": {
-                "azimuth": 298.6,
-                "altitude": -60.45,
-                "visible": false
+                "azimuth": 241,
+                "altitude": 1.22,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -14°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Central Utah, USA"
             }
         },
         {
@@ -1675,18 +1726,19 @@
                 38.84915548683907,
                 -100.9869720627217
             ],
-            "time": "2024-01-15T05:03:29.696Z",
+            "time": "2024-01-14T23:33:29.696Z",
             "flightBearing": -104,
             "sun": {
-                "azimuth": 298.75,
-                "altitude": -60.64,
-                "visible": false
+                "azimuth": 241.13,
+                "altitude": 1.11,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -13°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Glen Canyon, UT/AZ, USA"
             }
         },
         {
@@ -1696,18 +1748,19 @@
                 38.76321518217433,
                 -101.4323158778557
             ],
-            "time": "2024-01-15T05:06:08.484Z",
+            "time": "2024-01-14T23:36:08.484Z",
             "flightBearing": -104,
             "sun": {
-                "azimuth": 298.89,
-                "altitude": -60.83,
-                "visible": false
+                "azimuth": 241.27,
+                "altitude": 1.01,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -13°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Northern Arizona, USA"
             }
         },
         {
@@ -1717,18 +1770,19 @@
                 38.67558905956937,
                 -101.87657775400663
             ],
-            "time": "2024-01-15T05:08:47.272Z",
+            "time": "2024-01-14T23:38:47.272Z",
             "flightBearing": -104,
             "sun": {
-                "azimuth": 299.04,
-                "altitude": -61.02,
-                "visible": false
+                "azimuth": 241.41,
+                "altitude": 0.9,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -12°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Northern Arizona, USA"
             }
         },
         {
@@ -1738,18 +1792,19 @@
                 38.58628650937672,
                 -102.31974287567482
             ],
-            "time": "2024-01-15T05:11:26.060Z",
+            "time": "2024-01-14T23:41:26.060Z",
             "flightBearing": -105,
             "sun": {
-                "azimuth": 299.18,
-                "altitude": -61.21,
-                "visible": false
+                "azimuth": 241.55,
+                "altitude": 0.79,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -12°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Grand Canyon, AZ, USA"
             }
         },
         {
@@ -1759,18 +1814,19 @@
                 38.49531703831746,
                 -102.76179685490119
             ],
-            "time": "2024-01-15T05:14:04.848Z",
+            "time": "2024-01-14T23:44:04.848Z",
             "flightBearing": -105,
             "sun": {
-                "azimuth": 299.33,
-                "altitude": -61.4,
-                "visible": false
+                "azimuth": 241.69,
+                "altitude": 0.69,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -11°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Grand Canyon, AZ, USA"
             }
         },
         {
@@ -1780,18 +1836,19 @@
                 38.40269026545788,
                 -103.20272573226072
             ],
-            "time": "2024-01-15T05:16:43.636Z",
+            "time": "2024-01-14T23:46:43.636Z",
             "flightBearing": -105,
             "sun": {
-                "azimuth": 299.47,
-                "altitude": -61.6,
-                "visible": false
+                "azimuth": 241.83,
+                "altitude": 0.58,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -11°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Northern Arizona, USA"
             }
         },
         {
@@ -1801,18 +1858,19 @@
                 38.30841591819338,
                 -103.6425159775333
             ],
-            "time": "2024-01-15T05:19:22.424Z",
+            "time": "2024-01-14T23:49:22.424Z",
             "flightBearing": -105,
             "sun": {
-                "azimuth": 299.62,
-                "altitude": -61.8,
-                "visible": false
+                "azimuth": 241.97,
+                "altitude": 0.47,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -10°). Sunset in progress (sun altitude: 1°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Northern Arizona, USA"
             }
         },
         {
@@ -1822,18 +1880,19 @@
                 38.21250382824238,
                 -104.08115449005822
             ],
-            "time": "2024-01-15T05:22:01.212Z",
+            "time": "2024-01-14T23:52:01.212Z",
             "flightBearing": -106,
             "sun": {
-                "azimuth": 299.76,
-                "altitude": -62,
-                "visible": false
+                "azimuth": 242.11,
+                "altitude": 0.36,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -9°). Sunset in progress (sun altitude: 0°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Nevada Border, USA"
             }
         },
         {
@@ -1843,18 +1902,19 @@
                 38.11496392765377,
                 -104.51862859877897
             ],
-            "time": "2024-01-15T05:24:40.000Z",
+            "time": "2024-01-14T23:54:40.000Z",
             "flightBearing": -106,
             "sun": {
-                "azimuth": 299.91,
-                "altitude": -62.2,
-                "visible": false
+                "azimuth": 242.25,
+                "altitude": 0.25,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -9°). Sunset in progress (sun altitude: 0°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Near Las Vegas, NV, USA"
             }
         },
         {
@@ -1864,18 +1924,19 @@
                 38.01580624483108,
                 -104.95492606198503
             ],
-            "time": "2024-01-15T05:27:18.787Z",
+            "time": "2024-01-14T23:57:18.787Z",
             "flightBearing": -106,
             "sun": {
-                "azimuth": 300.05,
-                "altitude": -62.4,
-                "visible": false
+                "azimuth": 242.39,
+                "altitude": 0.14,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -8°). Sunset in progress (sun altitude: 0°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Southern Nevada, USA"
             }
         },
         {
@@ -1885,18 +1946,19 @@
                 37.915040900576365,
                 -105.39003506675817
             ],
-            "time": "2024-01-15T05:29:57.575Z",
+            "time": "2024-01-14T23:59:57.575Z",
             "flightBearing": -107,
             "sun": {
-                "azimuth": 300.2,
-                "altitude": -62.61,
-                "visible": false
+                "azimuth": 242.53,
+                "altitude": 0.03,
+                "visible": true
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -8°). Sunset in progress (sun altitude: 0°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Mojave Desert, NV, USA"
             }
         },
         {
@@ -1906,18 +1968,19 @@
                 37.812678104156696,
                 -105.82394422813016
             ],
-            "time": "2024-01-15T05:32:36.363Z",
+            "time": "2024-01-15T00:02:36.363Z",
             "flightBearing": -107,
             "sun": {
-                "azimuth": 300.34,
-                "altitude": -62.81,
+                "azimuth": 242.67,
+                "altitude": -0.08,
                 "visible": false
             },
             "recommendation": {
                 "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "reason": "Sun is visible, but mostly ahead/behind on the left (relative angle: -7°). Sunset in progress (sun altitude: 0°).",
+                "viewScore": 10,
+                "specialCondition": "Sunrise/Sunset",
+                "location": "Mojave Desert, NV/CA, USA"
             }
         },
         {
@@ -1927,18 +1990,19 @@
                 37.70872814939637,
                 -106.25664258796021
             ],
-            "time": "2024-01-15T05:35:15.151Z",
+            "time": "2024-01-15T00:05:15.151Z",
             "flightBearing": -107,
             "sun": {
-                "azimuth": 300.49,
-                "altitude": -63.02,
+                "azimuth": 242.81,
+                "altitude": -0.2,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -1948,18 +2012,19 @@
                 37.603201410797304,
                 -106.68811961353916
             ],
-            "time": "2024-01-15T05:37:53.939Z",
+            "time": "2024-01-15T00:07:53.939Z",
             "flightBearing": -107,
             "sun": {
-                "azimuth": 300.63,
-                "altitude": -63.23,
+                "azimuth": 242.95,
+                "altitude": -0.31,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -1969,18 +2034,19 @@
                 37.4961083396906,
                 -107.11836519592929
             ],
-            "time": "2024-01-15T05:40:32.727Z",
+            "time": "2024-01-15T00:10:32.727Z",
             "flightBearing": -108,
             "sun": {
-                "azimuth": 300.77,
-                "altitude": -63.44,
+                "azimuth": 243.09,
+                "altitude": -0.43,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -1990,18 +2056,19 @@
                 37.387459460421425,
                 -107.54736964804725
             ],
-            "time": "2024-01-15T05:43:11.515Z",
+            "time": "2024-01-15T00:13:11.515Z",
             "flightBearing": -108,
             "sun": {
-                "azimuth": 300.92,
-                "altitude": -63.66,
+                "azimuth": 243.23,
+                "altitude": -0.54,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2011,18 +2078,19 @@
                 37.277265366570155,
                 -107.97512370249899
             ],
-            "time": "2024-01-15T05:45:50.303Z",
+            "time": "2024-01-15T00:15:50.303Z",
             "flightBearing": -108,
             "sun": {
-                "azimuth": 301.06,
-                "altitude": -63.87,
+                "azimuth": 243.37,
+                "altitude": -0.66,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2032,18 +2100,19 @@
                 37.16553671721161,
                 -108.40161850917468
             ],
-            "time": "2024-01-15T05:48:29.090Z",
+            "time": "2024-01-15T00:18:29.090Z",
             "flightBearing": -108,
             "sun": {
-                "azimuth": 301.21,
-                "altitude": -64.09,
+                "azimuth": 243.51,
+                "altitude": -0.77,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2053,18 +2122,19 @@
                 37.052284233215055,
                 -108.82684563261263
             ],
-            "time": "2024-01-15T05:51:07.878Z",
+            "time": "2024-01-15T00:21:07.878Z",
             "flightBearing": -109,
             "sun": {
-                "azimuth": 301.35,
-                "altitude": -64.31,
+                "azimuth": 243.65,
+                "altitude": -0.89,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2074,18 +2144,19 @@
                 36.9375186935868,
                 -109.25079704914053
             ],
-            "time": "2024-01-15T05:53:46.666Z",
+            "time": "2024-01-15T00:23:46.666Z",
             "flightBearing": -109,
             "sun": {
-                "azimuth": 301.5,
-                "altitude": -64.53,
+                "azimuth": 243.79,
+                "altitude": -1.01,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2095,18 +2166,19 @@
                 36.82125093185753,
                 -109.67346514380293
             ],
-            "time": "2024-01-15T05:56:25.454Z",
+            "time": "2024-01-15T00:26:25.454Z",
             "flightBearing": -109,
             "sun": {
-                "azimuth": 301.65,
-                "altitude": -64.75,
+                "azimuth": 243.93,
+                "altitude": -1.13,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2116,18 +2188,19 @@
                 36.70349183251626,
                 -110.09484270708346
             ],
-            "time": "2024-01-15T05:59:04.242Z",
+            "time": "2024-01-15T00:29:04.242Z",
             "flightBearing": -109,
             "sun": {
-                "azimuth": 301.79,
-                "altitude": -64.98,
+                "azimuth": 244.07,
+                "altitude": -1.25,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2137,18 +2210,19 @@
                 36.58425232749265,
                 -110.51492293143107
             ],
-            "time": "2024-01-15T06:01:43.030Z",
+            "time": "2024-01-15T00:31:43.030Z",
             "flightBearing": -110,
             "sun": {
-                "azimuth": 301.94,
-                "altitude": -65.21,
+                "azimuth": 244.21,
+                "altitude": -1.37,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2158,18 +2232,19 @@
                 36.46354339268961,
                 -110.93369940759835
             ],
-            "time": "2024-01-15T06:04:21.818Z",
+            "time": "2024-01-15T00:34:21.818Z",
             "flightBearing": -110,
             "sun": {
-                "azimuth": 302.09,
-                "altitude": -65.44,
+                "azimuth": 244.35,
+                "altitude": -1.5,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2179,18 +2254,19 @@
                 36.34137604456731,
                 -111.35116612080148
             ],
-            "time": "2024-01-15T06:07:00.606Z",
+            "time": "2024-01-15T00:37:00.606Z",
             "flightBearing": -110,
             "sun": {
-                "azimuth": 302.23,
-                "altitude": -65.67,
+                "azimuth": 244.49,
+                "altitude": -1.62,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2200,18 +2276,19 @@
                 36.217761336780676,
                 -111.76731744670995
             ],
-            "time": "2024-01-15T06:09:39.393Z",
+            "time": "2024-01-15T00:39:39.393Z",
             "flightBearing": -110,
             "sun": {
-                "azimuth": 302.38,
-                "altitude": -65.9,
+                "azimuth": 244.63,
+                "altitude": -1.75,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2221,18 +2298,19 @@
                 36.09271035687112,
                 -112.1821481472753
             ],
-            "time": "2024-01-15T06:12:18.181Z",
+            "time": "2024-01-15T00:42:18.181Z",
             "flightBearing": -111,
             "sun": {
-                "azimuth": 302.53,
-                "altitude": -66.14,
+                "azimuth": 244.76,
+                "altitude": -1.87,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2242,18 +2320,19 @@
                 35.966234223014425,
                 -112.59565336640692
             ],
-            "time": "2024-01-15T06:14:56.969Z",
+            "time": "2024-01-15T00:44:56.969Z",
             "flightBearing": -111,
             "sun": {
-                "azimuth": 302.68,
-                "altitude": -66.37,
+                "azimuth": 244.9,
+                "altitude": -2,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2263,18 +2342,19 @@
                 35.8383440808253,
                 -113.00782862550432
             ],
-            "time": "2024-01-15T06:17:35.757Z",
+            "time": "2024-01-15T00:47:35.757Z",
             "flightBearing": -111,
             "sun": {
-                "azimuth": 302.83,
-                "altitude": -66.61,
+                "azimuth": 245.04,
+                "altitude": -2.13,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2284,18 +2364,19 @@
                 35.709051100220215,
                 -113.41866981885356
             ],
-            "time": "2024-01-15T06:20:14.545Z",
+            "time": "2024-01-15T00:50:14.545Z",
             "flightBearing": -111,
             "sun": {
-                "azimuth": 302.98,
-                "altitude": -66.85,
+                "azimuth": 245.18,
+                "altitude": -2.26,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2305,18 +2386,19 @@
                 35.57836647233921,
                 -113.82817320889687
             ],
-            "time": "2024-01-15T06:22:53.333Z",
+            "time": "2024-01-15T00:52:53.333Z",
             "flightBearing": -112,
             "sun": {
-                "azimuth": 303.14,
-                "altitude": -67.09,
+                "azimuth": 245.32,
+                "altitude": -2.39,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Near Barstow, CA, USA"
             }
         },
         {
@@ -2326,18 +2408,19 @@
                 35.44630140652756,
                 -114.23633542138353
             ],
-            "time": "2024-01-15T06:25:32.121Z",
+            "time": "2024-01-15T00:55:32.121Z",
             "flightBearing": -112,
             "sun": {
-                "azimuth": 303.29,
-                "altitude": -67.34,
+                "azimuth": 245.46,
+                "altitude": -2.52,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Mojave Desert, CA, USA"
             }
         },
         {
@@ -2347,18 +2430,19 @@
                 35.31286712737822,
                 -114.64315344041016
             ],
-            "time": "2024-01-15T06:28:10.909Z",
+            "time": "2024-01-15T00:58:10.909Z",
             "flightBearing": -112,
             "sun": {
-                "azimuth": 303.44,
-                "altitude": -67.59,
+                "azimuth": 245.6,
+                "altitude": -2.66,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "San Bernardino County, CA, USA"
             }
         },
         {
@@ -2368,18 +2452,19 @@
                 35.17807487183559,
                 -115.04862460335862
             ],
-            "time": "2024-01-15T06:30:49.696Z",
+            "time": "2024-01-15T01:00:49.696Z",
             "flightBearing": -112,
             "sun": {
-                "azimuth": 303.6,
-                "altitude": -67.83,
+                "azimuth": 245.74,
+                "altitude": -2.79,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "San Bernardino County, CA, USA"
             }
         },
         {
@@ -2389,18 +2474,19 @@
                 35.04193588636134,
                 -115.45274659573968
             ],
-            "time": "2024-01-15T06:33:28.484Z",
+            "time": "2024-01-15T01:03:28.484Z",
             "flightBearing": -112,
             "sun": {
-                "azimuth": 303.76,
-                "altitude": -68.08,
+                "azimuth": 245.87,
+                "altitude": -2.93,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "San Gabriel Mountains, CA, USA"
             }
         },
         {
@@ -2410,18 +2496,19 @@
                 34.90446142416261,
                 -115.85551744594942
             ],
-            "time": "2024-01-15T06:36:07.272Z",
+            "time": "2024-01-15T01:06:07.272Z",
             "flightBearing": -113,
             "sun": {
-                "azimuth": 303.92,
-                "altitude": -68.34,
+                "azimuth": 246.01,
+                "altitude": -3.06,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Near San Bernardino, CA, USA"
             }
         },
         {
@@ -2431,18 +2518,19 @@
                 34.76566274248336,
                 -116.25693551994732
             ],
-            "time": "2024-01-15T06:38:46.060Z",
+            "time": "2024-01-15T01:08:46.060Z",
             "flightBearing": -113,
             "sun": {
-                "azimuth": 304.08,
-                "altitude": -68.59,
+                "azimuth": 246.15,
+                "altitude": -3.2,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Inland Empire, CA, USA"
             }
         },
         {
@@ -2452,18 +2540,19 @@
                 34.62555109995873,
                 -116.65699951586207
             ],
-            "time": "2024-01-15T06:41:24.848Z",
+            "time": "2024-01-15T01:11:24.848Z",
             "flightBearing": -113,
             "sun": {
-                "azimuth": 304.24,
-                "altitude": -68.85,
+                "azimuth": 246.28,
+                "altitude": -3.34,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Inland Empire, CA, USA"
             }
         },
         {
@@ -2473,18 +2562,19 @@
                 34.484137754033185,
                 -117.05570845853383
             ],
-            "time": "2024-01-15T06:44:03.636Z",
+            "time": "2024-01-15T01:14:03.636Z",
             "flightBearing": -113,
             "sun": {
-                "azimuth": 304.4,
-                "altitude": -69.11,
+                "azimuth": 246.42,
+                "altitude": -3.48,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Greater Los Angeles Area, CA, USA"
             }
         },
         {
@@ -2494,18 +2584,19 @@
                 34.341433958442295,
                 -117.45306169399893
             ],
-            "time": "2024-01-15T06:46:42.424Z",
+            "time": "2024-01-15T01:16:42.424Z",
             "flightBearing": -114,
             "sun": {
-                "azimuth": 304.57,
-                "altitude": -69.37,
+                "azimuth": 246.56,
+                "altitude": -3.63,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Greater Los Angeles Area, CA, USA"
             }
         },
         {
@@ -2515,18 +2606,19 @@
                 34.19745096075837,
                 -117.8490588839245
             ],
-            "time": "2024-01-15T06:49:21.212Z",
+            "time": "2024-01-15T01:19:21.212Z",
             "flightBearing": -114,
             "sun": {
-                "azimuth": 304.73,
-                "altitude": -69.63,
+                "azimuth": 246.69,
+                "altitude": -3.77,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Los Angeles, CA, USA"
             }
         },
         {
@@ -2536,24 +2628,25 @@
                 34.052200000000006,
                 -118.2437
             ],
-            "time": "2024-01-15T06:52:00.000Z",
+            "time": "2024-01-15T01:22:00.000Z",
             "flightBearing": 0,
             "sun": {
-                "azimuth": 304.9,
-                "altitude": -69.89,
+                "azimuth": 246.83,
+                "altitude": -3.92,
                 "visible": false
             },
             "recommendation": {
-                "seatSide": "left",
-                "reason": "Default recommendation",
-                "viewScore": 5,
-                "specialCondition": "Standard conditions"
+                "seatSide": "none",
+                "reason": "Sun is not visible (below horizon).",
+                "viewScore": 1,
+                "specialCondition": "Not visible",
+                "location": "Los Angeles, CA, USA"
             }
         }
     ],
     "metadata": {
         "analysisMethod": "AI-powered 100-point analysis",
         "totalPointsAnalyzed": 100,
-        "overallScore": 8
+        "overallScore": 9
     }
 }
