@@ -1,0 +1,2559 @@
+{
+    "success": true,
+    "finalRecommendation": {
+        "side": "right",
+        "reason": "Choose a seat on the **right** side of the aircraft. The breathtaking view of the Las Vegas Strip from the air at night is the premier visual event of this flight and decisively outweighs the views offered on the left.",
+        "confidence": "high",
+        "overallScore": 8,
+        "bestViewingPeriods": [
+            {
+                "startPercent": 25,
+                "endPercent": 35,
+                "description": "Look for the massive, distant glow of the Chicago metropolitan area to the north."
+            },
+            {
+                "startPercent": 55,
+                "endPercent": 65,
+                "description": "A clear view of the Denver city lights on the plains before crossing the Rocky Mountains."
+            },
+            {
+                "startPercent": 86,
+                "endPercent": 92,
+                "description": "The key highlight: A brilliant and direct view of the Las Vegas Strip lighting up the desert."
+            }
+        ],
+        "specialHighlights": [
+            "Distant view of Chicago's light dome",
+            "Denver metro area lights",
+            "Exceptional stargazing over the Rocky Mountains and Arizona",
+            "Spectacular, direct view of the Las Vegas Strip",
+            "Expansive city lights on approach (better from left, but visible from right)"
+        ]
+    },
+    "flightDetails": {
+        "fromCoords": {
+            "latitude": 40.7128,
+            "longitude": -74.006
+        },
+        "toCoords": {
+            "latitude": 34.0522,
+            "longitude": -118.2437
+        },
+        "departureTime": "2024-01-15T02:30:00.000Z",
+        "flightDuration": {
+            "hours": 4,
+            "minutes": 22,
+            "totalMinutes": 262
+        },
+        "distance": 3935.751690893985,
+        "route": [
+            [
+                40.7128,
+                -74.006
+            ],
+            [
+                40.73483541734273,
+                -74.47685826710125
+            ],
+            [
+                40.75495624552998,
+                -74.94801497848029
+            ],
+            [
+                40.773159964850535,
+                -75.41944336477499
+            ],
+            [
+                40.78944429222629,
+                -75.8911165209573
+            ],
+            [
+                40.80380718252774,
+                -76.36300741950481
+            ],
+            [
+                40.81624682975536,
+                -76.83508892371617
+            ],
+            [
+                40.82676166808501,
+                -77.3073338011551
+            ],
+            [
+                40.83535037277614,
+                -77.77971473720727
+            ],
+            [
+                40.84201186094126,
+                -78.2522043487345
+            ],
+            [
+                40.84674529217595,
+                -78.72477519781013
+            ],
+            [
+                40.849550069048114,
+                -79.19739980551957
+            ],
+            [
+                40.85042583744627,
+                -79.67005066580926
+            ],
+            [
+                40.84937248678594,
+                -80.14270025936818
+            ],
+            [
+                40.84639015007422,
+                -80.61532106752516
+            ],
+            [
+                40.841479203832144,
+                -81.08788558614513
+            ],
+            [
+                40.834640267875194,
+                -81.56036633950849
+            ],
+            [
+                40.82587420495207,
+                -82.03273589415622
+            ],
+            [
+                40.81518212024236,
+                -82.50496687268524
+            ],
+            [
+                40.80256536071374,
+                -82.97703196747682
+            ],
+            [
+                40.78802551433961,
+                -83.44890395434254
+            ],
+            [
+                40.77156440917827,
+                -83.92055570607151
+            ],
+            [
+                40.753184112314884,
+                -84.39196020586309
+            ],
+            [
+                40.73288692866772,
+                -84.86309056062976
+            ],
+            [
+                40.71067539966033,
+                -85.33392001415464
+            ],
+            [
+                40.686552301761424,
+                -85.80442196008921
+            ],
+            [
+                40.66052064489447,
+                -86.27456995477613
+            ],
+            [
+                40.632583670719264,
+                -86.74433772988328
+            ],
+            [
+                40.60274485078768,
+                -87.21369920483552
+            ],
+            [
+                40.5710078845761,
+                -87.68262849903007
+            ],
+            [
+                40.53737669739735,
+                -88.1510999438235
+            ],
+            [
+                40.50185543819462,
+                -88.61908809427737
+            ],
+            [
+                40.46444847722057,
+                -89.08656774065082
+            ],
+            [
+                40.425160403604586,
+                -89.55351391962884
+            ],
+            [
+                40.38399602281126,
+                -90.01990192527533
+            ],
+            [
+                40.34096035399363,
+                -90.48570731970065
+            ],
+            [
+                40.29605862724435,
+                -90.95090594343414
+            ],
+            [
+                40.249296280748524,
+                -91.41547392549249
+            ],
+            [
+                40.20067895784161,
+                -91.87938769313553
+            ],
+            [
+                40.15021250397632,
+                -92.34262398130139
+            ],
+            [
+                40.097902963602095,
+                -92.80515984171426
+            ],
+            [
+                40.04375657696104,
+                -93.26697265165768
+            ],
+            [
+                39.98777977680441,
+                -93.72804012240776
+            ],
+            [
+                39.92997918503341,
+                -94.18834030732073
+            ],
+            [
+                39.87036160926833,
+                -94.64785160957045
+            ],
+            [
+                39.808934039350255,
+                -95.10655278953158
+            ],
+            [
+                39.74570364377919,
+                -95.56442297180506
+            ],
+            [
+                39.68067776609293,
+                -96.0214416518833
+            ],
+            [
+                39.61386392119057,
+                -96.4775887024526
+            ],
+            [
+                39.54526979160505,
+                -96.93284437933168
+            ],
+            [
+                39.47490322372851,
+                -97.38718932704478
+            ],
+            [
+                39.40277222399496,
+                -97.84060458402973
+            ],
+            [
+                39.328884955023995,
+                -98.29307158748072
+            ],
+            [
+                39.253249731729994,
+                -98.74457217782657
+            ],
+            [
+                39.17587501740052,
+                -99.19508860284621
+            ],
+            [
+                39.09676941974814,
+                -99.64460352142308
+            ],
+            [
+                39.01594168693958,
+                -100.09310000694077
+            ],
+            [
+                38.933400703606104,
+                -100.54056155032306
+            ],
+            [
+                38.84915548683907,
+                -100.9869720627217
+            ],
+            [
+                38.76321518217433,
+                -101.4323158778557
+            ],
+            [
+                38.67558905956937,
+                -101.87657775400663
+            ],
+            [
+                38.58628650937672,
+                -102.31974287567482
+            ],
+            [
+                38.49531703831746,
+                -102.76179685490119
+            ],
+            [
+                38.40269026545788,
+                -103.20272573226072
+            ],
+            [
+                38.30841591819338,
+                -103.6425159775333
+            ],
+            [
+                38.21250382824238,
+                -104.08115449005822
+            ],
+            [
+                38.11496392765377,
+                -104.51862859877897
+            ],
+            [
+                38.01580624483108,
+                -104.95492606198503
+            ],
+            [
+                37.915040900576365,
+                -105.39003506675817
+            ],
+            [
+                37.812678104156696,
+                -105.82394422813016
+            ],
+            [
+                37.70872814939637,
+                -106.25664258796021
+            ],
+            [
+                37.603201410797304,
+                -106.68811961353916
+            ],
+            [
+                37.4961083396906,
+                -107.11836519592929
+            ],
+            [
+                37.387459460421425,
+                -107.54736964804725
+            ],
+            [
+                37.277265366570155,
+                -107.97512370249899
+            ],
+            [
+                37.16553671721161,
+                -108.40161850917468
+            ],
+            [
+                37.052284233215055,
+                -108.82684563261263
+            ],
+            [
+                36.9375186935868,
+                -109.25079704914053
+            ],
+            [
+                36.82125093185753,
+                -109.67346514380293
+            ],
+            [
+                36.70349183251626,
+                -110.09484270708346
+            ],
+            [
+                36.58425232749265,
+                -110.51492293143107
+            ],
+            [
+                36.46354339268961,
+                -110.93369940759835
+            ],
+            [
+                36.34137604456731,
+                -111.35116612080148
+            ],
+            [
+                36.217761336780676,
+                -111.76731744670995
+            ],
+            [
+                36.09271035687112,
+                -112.1821481472753
+            ],
+            [
+                35.966234223014425,
+                -112.59565336640692
+            ],
+            [
+                35.8383440808253,
+                -113.00782862550432
+            ],
+            [
+                35.709051100220215,
+                -113.41866981885356
+            ],
+            [
+                35.57836647233921,
+                -113.82817320889687
+            ],
+            [
+                35.44630140652756,
+                -114.23633542138353
+            ],
+            [
+                35.31286712737822,
+                -114.64315344041016
+            ],
+            [
+                35.17807487183559,
+                -115.04862460335862
+            ],
+            [
+                35.04193588636134,
+                -115.45274659573968
+            ],
+            [
+                34.90446142416261,
+                -115.85551744594942
+            ],
+            [
+                34.76566274248336,
+                -116.25693551994732
+            ],
+            [
+                34.62555109995873,
+                -116.65699951586207
+            ],
+            [
+                34.484137754033185,
+                -117.05570845853383
+            ],
+            [
+                34.341433958442295,
+                -117.45306169399893
+            ],
+            [
+                34.19745096075837,
+                -117.8490588839245
+            ],
+            [
+                34.052200000000006,
+                -118.2437
+            ]
+        ]
+    },
+    "flightPoints": [
+        {
+            "pointIndex": 0,
+            "progressPercent": 0,
+            "coordinates": [
+                40.7128,
+                -74.006
+            ],
+            "time": "2024-01-15T02:30:00.000Z",
+            "flightBearing": -86,
+            "sun": {
+                "azimuth": 288.69,
+                "altitude": -51.9,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "During departure from the NYC area, the flight heads west. A left-side seat offers the best potential to see the Manhattan skyline and the dense city lights of New York and New Jersey.",
+                "viewScore": 8,
+                "specialCondition": "Night flight. View is of city lights."
+            }
+        },
+        {
+            "pointIndex": 1,
+            "progressPercent": 1,
+            "coordinates": [
+                40.73483541734273,
+                -74.47685826710125
+            ],
+            "time": "2024-01-15T02:32:38.787Z",
+            "flightBearing": -87,
+            "sun": {
+                "azimuth": 288.9,
+                "altitude": -52.03,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Flying over central Pennsylvania. Views will be limited to smaller towns and infrastructure. The left side looks south towards Harrisburg in the distance.",
+                "viewScore": 3,
+                "specialCondition": "Night flight over rural/suburban areas."
+            }
+        },
+        {
+            "pointIndex": 2,
+            "progressPercent": 2,
+            "coordinates": [
+                40.75495624552998,
+                -74.94801497848029
+            ],
+            "time": "2024-01-15T02:35:17.575Z",
+            "flightBearing": -87,
+            "sun": {
+                "azimuth": 289.11,
+                "altitude": -52.16,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "right",
+                "reason": "The flight path is crossing Ohio, south of the major cities along Lake Erie. A right-side seat may offer a distant view of the glow from Cleveland.",
+                "viewScore": 4,
+                "specialCondition": "Night flight. Views are of distant city glows."
+            }
+        },
+        {
+            "pointIndex": 3,
+            "progressPercent": 3,
+            "coordinates": [
+                40.773159964850535,
+                -75.41944336477499
+            ],
+            "time": "2024-01-15T02:37:56.363Z",
+            "flightBearing": -87,
+            "sun": {
+                "azimuth": 289.32,
+                "altitude": -52.29,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "right",
+                "reason": "Crossing Indiana and Illinois. The flight path passes well south of Chicago, making the right side the ideal choice for seeing the massive light dome of the Chicago metropolitan area.",
+                "viewScore": 6,
+                "specialCondition": "Night flight. View is of a very large, distant city."
+            }
+        },
+        {
+            "pointIndex": 4,
+            "progressPercent": 4,
+            "coordinates": [
+                40.78944429222629,
+                -75.8911165209573
+            ],
+            "time": "2024-01-15T02:40:35.151Z",
+            "flightBearing": -88,
+            "sun": {
+                "azimuth": 289.53,
+                "altitude": -52.42,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "The flight path crosses over Missouri, north of St. Louis but relatively close to Kansas City. The left side will provide a better view of the Kansas City metro area lights.",
+                "viewScore": 5,
+                "specialCondition": "Night flight over a mid-sized metropolitan area."
+            }
+        },
+        {
+            "pointIndex": 5,
+            "progressPercent": 5,
+            "coordinates": [
+                40.80380718252774,
+                -76.36300741950481
+            ],
+            "time": "2024-01-15T02:43:13.939Z",
+            "flightBearing": -88,
+            "sun": {
+                "azimuth": 289.73,
+                "altitude": -52.55,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "right",
+                "reason": "Flying over Kansas. The terrain is flat and sparsely populated. The flight path passes south of Omaha/Lincoln, so any distant glow would be on the right.",
+                "viewScore": 2,
+                "specialCondition": "Night flight over sparsely populated plains."
+            }
+        },
+        {
+            "pointIndex": 6,
+            "progressPercent": 6,
+            "coordinates": [
+                40.81624682975536,
+                -76.83508892371617
+            ],
+            "time": "2024-01-15T02:45:52.727Z",
+            "flightBearing": -88,
+            "sun": {
+                "azimuth": 289.94,
+                "altitude": -52.68,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "right",
+                "reason": "Approaching the Rocky Mountains and flying over Colorado. The flight path is south of Denver. A right-side seat will offer a clear view of the Denver-Aurora metropolitan area lights against the dark backdrop of the plains.",
+                "viewScore": 7,
+                "specialCondition": "Night flight with a major city view."
+            }
+        },
+        {
+            "pointIndex": 7,
+            "progressPercent": 7,
+            "coordinates": [
+                40.82676166808501,
+                -77.3073338011551
+            ],
+            "time": "2024-01-15T02:48:31.515Z",
+            "flightBearing": -88,
+            "sun": {
+                "azimuth": 290.14,
+                "altitude": -52.81,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "right",
+                "reason": "Flying over the Rocky Mountains in southern Colorado/northern New Mexico. This area is extremely dark, providing an excellent opportunity for stargazing from either side. The right side looks north towards more national parks and dark sky areas.",
+                "viewScore": 3,
+                "specialCondition": "Excellent stargazing opportunity due to low light pollution."
+            }
+        },
+        {
+            "pointIndex": 8,
+            "progressPercent": 8,
+            "coordinates": [
+                40.83535037277614,
+                -77.77971473720727
+            ],
+            "time": "2024-01-15T02:51:10.303Z",
+            "flightBearing": -89,
+            "sun": {
+                "azimuth": 290.34,
+                "altitude": -52.94,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "right",
+                "reason": "The flight path crosses northern Arizona, a region with significant dark sky preserves. The right side looks towards the Grand Canyon and southern Utah, offering spectacular stargazing.",
+                "viewScore": 3,
+                "specialCondition": "Prime stargazing segment of the flight."
+            }
+        },
+        {
+            "pointIndex": 9,
+            "progressPercent": 9,
+            "coordinates": [
+                40.84201186094126,
+                -78.2522043487345
+            ],
+            "time": "2024-01-15T02:53:49.090Z",
+            "flightBearing": -89,
+            "sun": {
+                "azimuth": 290.54,
+                "altitude": -53.07,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "right",
+                "reason": "This is the highlight of the flight. The path passes south of Las Vegas. A right-side seat is absolutely essential for a spectacular view of the brilliantly lit Las Vegas Strip and city in the middle of the dark Mojave Desert.",
+                "viewScore": 10,
+                "specialCondition": "Unobstructed view of the Las Vegas strip at night."
+            }
+        },
+        {
+            "pointIndex": 10,
+            "progressPercent": 10,
+            "coordinates": [
+                40.84674529217595,
+                -78.72477519781013
+            ],
+            "time": "2024-01-15T02:56:27.878Z",
+            "flightBearing": -89,
+            "sun": {
+                "azimuth": 290.73,
+                "altitude": -53.2,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "On approach to Los Angeles from the northeast. A left-side seat will provide an expansive view of the sprawling lights of the San Gabriel Valley and the greater Los Angeles basin as the plane descends.",
+                "viewScore": 9,
+                "specialCondition": "Night approach over one of the world's largest urban areas."
+            }
+        },
+        {
+            "pointIndex": 11,
+            "progressPercent": 11,
+            "coordinates": [
+                40.849550069048114,
+                -79.19739980551957
+            ],
+            "time": "2024-01-15T02:59:06.666Z",
+            "flightBearing": -90,
+            "sun": {
+                "azimuth": 290.93,
+                "altitude": -53.33,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 12,
+            "progressPercent": 12,
+            "coordinates": [
+                40.85042583744627,
+                -79.67005066580926
+            ],
+            "time": "2024-01-15T03:01:45.454Z",
+            "flightBearing": -90,
+            "sun": {
+                "azimuth": 291.12,
+                "altitude": -53.47,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 13,
+            "progressPercent": 13,
+            "coordinates": [
+                40.84937248678594,
+                -80.14270025936818
+            ],
+            "time": "2024-01-15T03:04:24.242Z",
+            "flightBearing": -90,
+            "sun": {
+                "azimuth": 291.31,
+                "altitude": -53.6,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 14,
+            "progressPercent": 14,
+            "coordinates": [
+                40.84639015007422,
+                -80.61532106752516
+            ],
+            "time": "2024-01-15T03:07:03.030Z",
+            "flightBearing": -91,
+            "sun": {
+                "azimuth": 291.51,
+                "altitude": -53.73,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 15,
+            "progressPercent": 15,
+            "coordinates": [
+                40.841479203832144,
+                -81.08788558614513
+            ],
+            "time": "2024-01-15T03:09:41.818Z",
+            "flightBearing": -91,
+            "sun": {
+                "azimuth": 291.7,
+                "altitude": -53.87,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 16,
+            "progressPercent": 16,
+            "coordinates": [
+                40.834640267875194,
+                -81.56036633950849
+            ],
+            "time": "2024-01-15T03:12:20.606Z",
+            "flightBearing": -91,
+            "sun": {
+                "azimuth": 291.88,
+                "altitude": -54,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 17,
+            "progressPercent": 17,
+            "coordinates": [
+                40.82587420495207,
+                -82.03273589415622
+            ],
+            "time": "2024-01-15T03:14:59.393Z",
+            "flightBearing": -92,
+            "sun": {
+                "azimuth": 292.07,
+                "altitude": -54.14,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 18,
+            "progressPercent": 18,
+            "coordinates": [
+                40.81518212024236,
+                -82.50496687268524
+            ],
+            "time": "2024-01-15T03:17:38.181Z",
+            "flightBearing": -92,
+            "sun": {
+                "azimuth": 292.26,
+                "altitude": -54.28,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 19,
+            "progressPercent": 19,
+            "coordinates": [
+                40.80256536071374,
+                -82.97703196747682
+            ],
+            "time": "2024-01-15T03:20:16.969Z",
+            "flightBearing": -92,
+            "sun": {
+                "azimuth": 292.44,
+                "altitude": -54.41,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 20,
+            "progressPercent": 20,
+            "coordinates": [
+                40.78802551433961,
+                -83.44890395434254
+            ],
+            "time": "2024-01-15T03:22:55.757Z",
+            "flightBearing": -92,
+            "sun": {
+                "azimuth": 292.62,
+                "altitude": -54.55,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 21,
+            "progressPercent": 21,
+            "coordinates": [
+                40.77156440917827,
+                -83.92055570607151
+            ],
+            "time": "2024-01-15T03:25:34.545Z",
+            "flightBearing": -93,
+            "sun": {
+                "azimuth": 292.8,
+                "altitude": -54.69,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 22,
+            "progressPercent": 22,
+            "coordinates": [
+                40.753184112314884,
+                -84.39196020586309
+            ],
+            "time": "2024-01-15T03:28:13.333Z",
+            "flightBearing": -93,
+            "sun": {
+                "azimuth": 292.98,
+                "altitude": -54.83,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 23,
+            "progressPercent": 23,
+            "coordinates": [
+                40.73288692866772,
+                -84.86309056062976
+            ],
+            "time": "2024-01-15T03:30:52.121Z",
+            "flightBearing": -93,
+            "sun": {
+                "azimuth": 293.16,
+                "altitude": -54.97,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 24,
+            "progressPercent": 24,
+            "coordinates": [
+                40.71067539966033,
+                -85.33392001415464
+            ],
+            "time": "2024-01-15T03:33:30.909Z",
+            "flightBearing": -94,
+            "sun": {
+                "azimuth": 293.34,
+                "altitude": -55.11,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 25,
+            "progressPercent": 25,
+            "coordinates": [
+                40.686552301761424,
+                -85.80442196008921
+            ],
+            "time": "2024-01-15T03:36:09.696Z",
+            "flightBearing": -94,
+            "sun": {
+                "azimuth": 293.51,
+                "altitude": -55.25,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 26,
+            "progressPercent": 26,
+            "coordinates": [
+                40.66052064489447,
+                -86.27456995477613
+            ],
+            "time": "2024-01-15T03:38:48.484Z",
+            "flightBearing": -94,
+            "sun": {
+                "azimuth": 293.69,
+                "altitude": -55.4,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 27,
+            "progressPercent": 27,
+            "coordinates": [
+                40.632583670719264,
+                -86.74433772988328
+            ],
+            "time": "2024-01-15T03:41:27.272Z",
+            "flightBearing": -95,
+            "sun": {
+                "azimuth": 293.86,
+                "altitude": -55.54,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 28,
+            "progressPercent": 28,
+            "coordinates": [
+                40.60274485078768,
+                -87.21369920483552
+            ],
+            "time": "2024-01-15T03:44:06.060Z",
+            "flightBearing": -95,
+            "sun": {
+                "azimuth": 294.03,
+                "altitude": -55.69,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 29,
+            "progressPercent": 29,
+            "coordinates": [
+                40.5710078845761,
+                -87.68262849903007
+            ],
+            "time": "2024-01-15T03:46:44.848Z",
+            "flightBearing": -95,
+            "sun": {
+                "azimuth": 294.21,
+                "altitude": -55.83,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 30,
+            "progressPercent": 30,
+            "coordinates": [
+                40.53737669739735,
+                -88.1510999438235
+            ],
+            "time": "2024-01-15T03:49:23.636Z",
+            "flightBearing": -96,
+            "sun": {
+                "azimuth": 294.38,
+                "altitude": -55.98,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 31,
+            "progressPercent": 31,
+            "coordinates": [
+                40.50185543819462,
+                -88.61908809427737
+            ],
+            "time": "2024-01-15T03:52:02.424Z",
+            "flightBearing": -96,
+            "sun": {
+                "azimuth": 294.54,
+                "altitude": -56.13,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 32,
+            "progressPercent": 32,
+            "coordinates": [
+                40.46444847722057,
+                -89.08656774065082
+            ],
+            "time": "2024-01-15T03:54:41.212Z",
+            "flightBearing": -96,
+            "sun": {
+                "azimuth": 294.71,
+                "altitude": -56.28,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 33,
+            "progressPercent": 33,
+            "coordinates": [
+                40.425160403604586,
+                -89.55351391962884
+            ],
+            "time": "2024-01-15T03:57:20.000Z",
+            "flightBearing": -96,
+            "sun": {
+                "azimuth": 294.88,
+                "altitude": -56.43,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 34,
+            "progressPercent": 34,
+            "coordinates": [
+                40.38399602281126,
+                -90.01990192527533
+            ],
+            "time": "2024-01-15T03:59:58.787Z",
+            "flightBearing": -97,
+            "sun": {
+                "azimuth": 295.04,
+                "altitude": -56.58,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 35,
+            "progressPercent": 35,
+            "coordinates": [
+                40.34096035399363,
+                -90.48570731970065
+            ],
+            "time": "2024-01-15T04:02:37.575Z",
+            "flightBearing": -97,
+            "sun": {
+                "azimuth": 295.21,
+                "altitude": -56.73,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 36,
+            "progressPercent": 36,
+            "coordinates": [
+                40.29605862724435,
+                -90.95090594343414
+            ],
+            "time": "2024-01-15T04:05:16.363Z",
+            "flightBearing": -97,
+            "sun": {
+                "azimuth": 295.37,
+                "altitude": -56.89,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 37,
+            "progressPercent": 37,
+            "coordinates": [
+                40.249296280748524,
+                -91.41547392549249
+            ],
+            "time": "2024-01-15T04:07:55.151Z",
+            "flightBearing": -98,
+            "sun": {
+                "azimuth": 295.53,
+                "altitude": -57.04,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 38,
+            "progressPercent": 38,
+            "coordinates": [
+                40.20067895784161,
+                -91.87938769313553
+            ],
+            "time": "2024-01-15T04:10:33.939Z",
+            "flightBearing": -98,
+            "sun": {
+                "azimuth": 295.69,
+                "altitude": -57.2,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 39,
+            "progressPercent": 39,
+            "coordinates": [
+                40.15021250397632,
+                -92.34262398130139
+            ],
+            "time": "2024-01-15T04:13:12.727Z",
+            "flightBearing": -98,
+            "sun": {
+                "azimuth": 295.85,
+                "altitude": -57.36,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 40,
+            "progressPercent": 40,
+            "coordinates": [
+                40.097902963602095,
+                -92.80515984171426
+            ],
+            "time": "2024-01-15T04:15:51.515Z",
+            "flightBearing": -99,
+            "sun": {
+                "azimuth": 296.01,
+                "altitude": -57.52,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 41,
+            "progressPercent": 41,
+            "coordinates": [
+                40.04375657696104,
+                -93.26697265165768
+            ],
+            "time": "2024-01-15T04:18:30.303Z",
+            "flightBearing": -99,
+            "sun": {
+                "azimuth": 296.17,
+                "altitude": -57.68,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 42,
+            "progressPercent": 42,
+            "coordinates": [
+                39.98777977680441,
+                -93.72804012240776
+            ],
+            "time": "2024-01-15T04:21:09.090Z",
+            "flightBearing": -99,
+            "sun": {
+                "azimuth": 296.33,
+                "altitude": -57.84,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 43,
+            "progressPercent": 43,
+            "coordinates": [
+                39.92997918503341,
+                -94.18834030732073
+            ],
+            "time": "2024-01-15T04:23:47.878Z",
+            "flightBearing": -99,
+            "sun": {
+                "azimuth": 296.48,
+                "altitude": -58,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 44,
+            "progressPercent": 44,
+            "coordinates": [
+                39.87036160926833,
+                -94.64785160957045
+            ],
+            "time": "2024-01-15T04:26:26.666Z",
+            "flightBearing": -100,
+            "sun": {
+                "azimuth": 296.64,
+                "altitude": -58.17,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 45,
+            "progressPercent": 45,
+            "coordinates": [
+                39.808934039350255,
+                -95.10655278953158
+            ],
+            "time": "2024-01-15T04:29:05.454Z",
+            "flightBearing": -100,
+            "sun": {
+                "azimuth": 296.79,
+                "altitude": -58.33,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 46,
+            "progressPercent": 46,
+            "coordinates": [
+                39.74570364377919,
+                -95.56442297180506
+            ],
+            "time": "2024-01-15T04:31:44.242Z",
+            "flightBearing": -100,
+            "sun": {
+                "azimuth": 296.95,
+                "altitude": -58.5,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 47,
+            "progressPercent": 47,
+            "coordinates": [
+                39.68067776609293,
+                -96.0214416518833
+            ],
+            "time": "2024-01-15T04:34:23.030Z",
+            "flightBearing": -101,
+            "sun": {
+                "azimuth": 297.1,
+                "altitude": -58.67,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 48,
+            "progressPercent": 48,
+            "coordinates": [
+                39.61386392119057,
+                -96.4775887024526
+            ],
+            "time": "2024-01-15T04:37:01.818Z",
+            "flightBearing": -101,
+            "sun": {
+                "azimuth": 297.25,
+                "altitude": -58.84,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 49,
+            "progressPercent": 49,
+            "coordinates": [
+                39.54526979160505,
+                -96.93284437933168
+            ],
+            "time": "2024-01-15T04:39:40.606Z",
+            "flightBearing": -101,
+            "sun": {
+                "azimuth": 297.41,
+                "altitude": -59.02,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 50,
+            "progressPercent": 51,
+            "coordinates": [
+                39.47490322372851,
+                -97.38718932704478
+            ],
+            "time": "2024-01-15T04:42:19.393Z",
+            "flightBearing": -101,
+            "sun": {
+                "azimuth": 297.56,
+                "altitude": -59.19,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 51,
+            "progressPercent": 52,
+            "coordinates": [
+                39.40277222399496,
+                -97.84060458402973
+            ],
+            "time": "2024-01-15T04:44:58.181Z",
+            "flightBearing": -102,
+            "sun": {
+                "azimuth": 297.71,
+                "altitude": -59.36,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 52,
+            "progressPercent": 53,
+            "coordinates": [
+                39.328884955023995,
+                -98.29307158748072
+            ],
+            "time": "2024-01-15T04:47:36.969Z",
+            "flightBearing": -102,
+            "sun": {
+                "azimuth": 297.86,
+                "altitude": -59.54,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 53,
+            "progressPercent": 54,
+            "coordinates": [
+                39.253249731729994,
+                -98.74457217782657
+            ],
+            "time": "2024-01-15T04:50:15.757Z",
+            "flightBearing": -102,
+            "sun": {
+                "azimuth": 298.01,
+                "altitude": -59.72,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 54,
+            "progressPercent": 55,
+            "coordinates": [
+                39.17587501740052,
+                -99.19508860284621
+            ],
+            "time": "2024-01-15T04:52:54.545Z",
+            "flightBearing": -103,
+            "sun": {
+                "azimuth": 298.16,
+                "altitude": -59.9,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 55,
+            "progressPercent": 56,
+            "coordinates": [
+                39.09676941974814,
+                -99.64460352142308
+            ],
+            "time": "2024-01-15T04:55:33.333Z",
+            "flightBearing": -103,
+            "sun": {
+                "azimuth": 298.3,
+                "altitude": -60.08,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 56,
+            "progressPercent": 57,
+            "coordinates": [
+                39.01594168693958,
+                -100.09310000694077
+            ],
+            "time": "2024-01-15T04:58:12.121Z",
+            "flightBearing": -103,
+            "sun": {
+                "azimuth": 298.45,
+                "altitude": -60.27,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 57,
+            "progressPercent": 58,
+            "coordinates": [
+                38.933400703606104,
+                -100.54056155032306
+            ],
+            "time": "2024-01-15T05:00:50.909Z",
+            "flightBearing": -103,
+            "sun": {
+                "azimuth": 298.6,
+                "altitude": -60.45,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 58,
+            "progressPercent": 59,
+            "coordinates": [
+                38.84915548683907,
+                -100.9869720627217
+            ],
+            "time": "2024-01-15T05:03:29.696Z",
+            "flightBearing": -104,
+            "sun": {
+                "azimuth": 298.75,
+                "altitude": -60.64,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 59,
+            "progressPercent": 60,
+            "coordinates": [
+                38.76321518217433,
+                -101.4323158778557
+            ],
+            "time": "2024-01-15T05:06:08.484Z",
+            "flightBearing": -104,
+            "sun": {
+                "azimuth": 298.89,
+                "altitude": -60.83,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 60,
+            "progressPercent": 61,
+            "coordinates": [
+                38.67558905956937,
+                -101.87657775400663
+            ],
+            "time": "2024-01-15T05:08:47.272Z",
+            "flightBearing": -104,
+            "sun": {
+                "azimuth": 299.04,
+                "altitude": -61.02,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 61,
+            "progressPercent": 62,
+            "coordinates": [
+                38.58628650937672,
+                -102.31974287567482
+            ],
+            "time": "2024-01-15T05:11:26.060Z",
+            "flightBearing": -105,
+            "sun": {
+                "azimuth": 299.18,
+                "altitude": -61.21,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 62,
+            "progressPercent": 63,
+            "coordinates": [
+                38.49531703831746,
+                -102.76179685490119
+            ],
+            "time": "2024-01-15T05:14:04.848Z",
+            "flightBearing": -105,
+            "sun": {
+                "azimuth": 299.33,
+                "altitude": -61.4,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 63,
+            "progressPercent": 64,
+            "coordinates": [
+                38.40269026545788,
+                -103.20272573226072
+            ],
+            "time": "2024-01-15T05:16:43.636Z",
+            "flightBearing": -105,
+            "sun": {
+                "azimuth": 299.47,
+                "altitude": -61.6,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 64,
+            "progressPercent": 65,
+            "coordinates": [
+                38.30841591819338,
+                -103.6425159775333
+            ],
+            "time": "2024-01-15T05:19:22.424Z",
+            "flightBearing": -105,
+            "sun": {
+                "azimuth": 299.62,
+                "altitude": -61.8,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 65,
+            "progressPercent": 66,
+            "coordinates": [
+                38.21250382824238,
+                -104.08115449005822
+            ],
+            "time": "2024-01-15T05:22:01.212Z",
+            "flightBearing": -106,
+            "sun": {
+                "azimuth": 299.76,
+                "altitude": -62,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 66,
+            "progressPercent": 67,
+            "coordinates": [
+                38.11496392765377,
+                -104.51862859877897
+            ],
+            "time": "2024-01-15T05:24:40.000Z",
+            "flightBearing": -106,
+            "sun": {
+                "azimuth": 299.91,
+                "altitude": -62.2,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 67,
+            "progressPercent": 68,
+            "coordinates": [
+                38.01580624483108,
+                -104.95492606198503
+            ],
+            "time": "2024-01-15T05:27:18.787Z",
+            "flightBearing": -106,
+            "sun": {
+                "azimuth": 300.05,
+                "altitude": -62.4,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 68,
+            "progressPercent": 69,
+            "coordinates": [
+                37.915040900576365,
+                -105.39003506675817
+            ],
+            "time": "2024-01-15T05:29:57.575Z",
+            "flightBearing": -107,
+            "sun": {
+                "azimuth": 300.2,
+                "altitude": -62.61,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 69,
+            "progressPercent": 70,
+            "coordinates": [
+                37.812678104156696,
+                -105.82394422813016
+            ],
+            "time": "2024-01-15T05:32:36.363Z",
+            "flightBearing": -107,
+            "sun": {
+                "azimuth": 300.34,
+                "altitude": -62.81,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 70,
+            "progressPercent": 71,
+            "coordinates": [
+                37.70872814939637,
+                -106.25664258796021
+            ],
+            "time": "2024-01-15T05:35:15.151Z",
+            "flightBearing": -107,
+            "sun": {
+                "azimuth": 300.49,
+                "altitude": -63.02,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 71,
+            "progressPercent": 72,
+            "coordinates": [
+                37.603201410797304,
+                -106.68811961353916
+            ],
+            "time": "2024-01-15T05:37:53.939Z",
+            "flightBearing": -107,
+            "sun": {
+                "azimuth": 300.63,
+                "altitude": -63.23,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 72,
+            "progressPercent": 73,
+            "coordinates": [
+                37.4961083396906,
+                -107.11836519592929
+            ],
+            "time": "2024-01-15T05:40:32.727Z",
+            "flightBearing": -108,
+            "sun": {
+                "azimuth": 300.77,
+                "altitude": -63.44,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 73,
+            "progressPercent": 74,
+            "coordinates": [
+                37.387459460421425,
+                -107.54736964804725
+            ],
+            "time": "2024-01-15T05:43:11.515Z",
+            "flightBearing": -108,
+            "sun": {
+                "azimuth": 300.92,
+                "altitude": -63.66,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 74,
+            "progressPercent": 75,
+            "coordinates": [
+                37.277265366570155,
+                -107.97512370249899
+            ],
+            "time": "2024-01-15T05:45:50.303Z",
+            "flightBearing": -108,
+            "sun": {
+                "azimuth": 301.06,
+                "altitude": -63.87,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 75,
+            "progressPercent": 76,
+            "coordinates": [
+                37.16553671721161,
+                -108.40161850917468
+            ],
+            "time": "2024-01-15T05:48:29.090Z",
+            "flightBearing": -108,
+            "sun": {
+                "azimuth": 301.21,
+                "altitude": -64.09,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 76,
+            "progressPercent": 77,
+            "coordinates": [
+                37.052284233215055,
+                -108.82684563261263
+            ],
+            "time": "2024-01-15T05:51:07.878Z",
+            "flightBearing": -109,
+            "sun": {
+                "azimuth": 301.35,
+                "altitude": -64.31,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 77,
+            "progressPercent": 78,
+            "coordinates": [
+                36.9375186935868,
+                -109.25079704914053
+            ],
+            "time": "2024-01-15T05:53:46.666Z",
+            "flightBearing": -109,
+            "sun": {
+                "azimuth": 301.5,
+                "altitude": -64.53,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 78,
+            "progressPercent": 79,
+            "coordinates": [
+                36.82125093185753,
+                -109.67346514380293
+            ],
+            "time": "2024-01-15T05:56:25.454Z",
+            "flightBearing": -109,
+            "sun": {
+                "azimuth": 301.65,
+                "altitude": -64.75,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 79,
+            "progressPercent": 80,
+            "coordinates": [
+                36.70349183251626,
+                -110.09484270708346
+            ],
+            "time": "2024-01-15T05:59:04.242Z",
+            "flightBearing": -109,
+            "sun": {
+                "azimuth": 301.79,
+                "altitude": -64.98,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 80,
+            "progressPercent": 81,
+            "coordinates": [
+                36.58425232749265,
+                -110.51492293143107
+            ],
+            "time": "2024-01-15T06:01:43.030Z",
+            "flightBearing": -110,
+            "sun": {
+                "azimuth": 301.94,
+                "altitude": -65.21,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 81,
+            "progressPercent": 82,
+            "coordinates": [
+                36.46354339268961,
+                -110.93369940759835
+            ],
+            "time": "2024-01-15T06:04:21.818Z",
+            "flightBearing": -110,
+            "sun": {
+                "azimuth": 302.09,
+                "altitude": -65.44,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 82,
+            "progressPercent": 83,
+            "coordinates": [
+                36.34137604456731,
+                -111.35116612080148
+            ],
+            "time": "2024-01-15T06:07:00.606Z",
+            "flightBearing": -110,
+            "sun": {
+                "azimuth": 302.23,
+                "altitude": -65.67,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 83,
+            "progressPercent": 84,
+            "coordinates": [
+                36.217761336780676,
+                -111.76731744670995
+            ],
+            "time": "2024-01-15T06:09:39.393Z",
+            "flightBearing": -110,
+            "sun": {
+                "azimuth": 302.38,
+                "altitude": -65.9,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 84,
+            "progressPercent": 85,
+            "coordinates": [
+                36.09271035687112,
+                -112.1821481472753
+            ],
+            "time": "2024-01-15T06:12:18.181Z",
+            "flightBearing": -111,
+            "sun": {
+                "azimuth": 302.53,
+                "altitude": -66.14,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 85,
+            "progressPercent": 86,
+            "coordinates": [
+                35.966234223014425,
+                -112.59565336640692
+            ],
+            "time": "2024-01-15T06:14:56.969Z",
+            "flightBearing": -111,
+            "sun": {
+                "azimuth": 302.68,
+                "altitude": -66.37,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 86,
+            "progressPercent": 87,
+            "coordinates": [
+                35.8383440808253,
+                -113.00782862550432
+            ],
+            "time": "2024-01-15T06:17:35.757Z",
+            "flightBearing": -111,
+            "sun": {
+                "azimuth": 302.83,
+                "altitude": -66.61,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 87,
+            "progressPercent": 88,
+            "coordinates": [
+                35.709051100220215,
+                -113.41866981885356
+            ],
+            "time": "2024-01-15T06:20:14.545Z",
+            "flightBearing": -111,
+            "sun": {
+                "azimuth": 302.98,
+                "altitude": -66.85,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 88,
+            "progressPercent": 89,
+            "coordinates": [
+                35.57836647233921,
+                -113.82817320889687
+            ],
+            "time": "2024-01-15T06:22:53.333Z",
+            "flightBearing": -112,
+            "sun": {
+                "azimuth": 303.14,
+                "altitude": -67.09,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 89,
+            "progressPercent": 90,
+            "coordinates": [
+                35.44630140652756,
+                -114.23633542138353
+            ],
+            "time": "2024-01-15T06:25:32.121Z",
+            "flightBearing": -112,
+            "sun": {
+                "azimuth": 303.29,
+                "altitude": -67.34,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 90,
+            "progressPercent": 91,
+            "coordinates": [
+                35.31286712737822,
+                -114.64315344041016
+            ],
+            "time": "2024-01-15T06:28:10.909Z",
+            "flightBearing": -112,
+            "sun": {
+                "azimuth": 303.44,
+                "altitude": -67.59,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 91,
+            "progressPercent": 92,
+            "coordinates": [
+                35.17807487183559,
+                -115.04862460335862
+            ],
+            "time": "2024-01-15T06:30:49.696Z",
+            "flightBearing": -112,
+            "sun": {
+                "azimuth": 303.6,
+                "altitude": -67.83,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 92,
+            "progressPercent": 93,
+            "coordinates": [
+                35.04193588636134,
+                -115.45274659573968
+            ],
+            "time": "2024-01-15T06:33:28.484Z",
+            "flightBearing": -112,
+            "sun": {
+                "azimuth": 303.76,
+                "altitude": -68.08,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 93,
+            "progressPercent": 94,
+            "coordinates": [
+                34.90446142416261,
+                -115.85551744594942
+            ],
+            "time": "2024-01-15T06:36:07.272Z",
+            "flightBearing": -113,
+            "sun": {
+                "azimuth": 303.92,
+                "altitude": -68.34,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 94,
+            "progressPercent": 95,
+            "coordinates": [
+                34.76566274248336,
+                -116.25693551994732
+            ],
+            "time": "2024-01-15T06:38:46.060Z",
+            "flightBearing": -113,
+            "sun": {
+                "azimuth": 304.08,
+                "altitude": -68.59,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 95,
+            "progressPercent": 96,
+            "coordinates": [
+                34.62555109995873,
+                -116.65699951586207
+            ],
+            "time": "2024-01-15T06:41:24.848Z",
+            "flightBearing": -113,
+            "sun": {
+                "azimuth": 304.24,
+                "altitude": -68.85,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 96,
+            "progressPercent": 97,
+            "coordinates": [
+                34.484137754033185,
+                -117.05570845853383
+            ],
+            "time": "2024-01-15T06:44:03.636Z",
+            "flightBearing": -113,
+            "sun": {
+                "azimuth": 304.4,
+                "altitude": -69.11,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 97,
+            "progressPercent": 98,
+            "coordinates": [
+                34.341433958442295,
+                -117.45306169399893
+            ],
+            "time": "2024-01-15T06:46:42.424Z",
+            "flightBearing": -114,
+            "sun": {
+                "azimuth": 304.57,
+                "altitude": -69.37,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 98,
+            "progressPercent": 99,
+            "coordinates": [
+                34.19745096075837,
+                -117.8490588839245
+            ],
+            "time": "2024-01-15T06:49:21.212Z",
+            "flightBearing": -114,
+            "sun": {
+                "azimuth": 304.73,
+                "altitude": -69.63,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        },
+        {
+            "pointIndex": 99,
+            "progressPercent": 100,
+            "coordinates": [
+                34.052200000000006,
+                -118.2437
+            ],
+            "time": "2024-01-15T06:52:00.000Z",
+            "flightBearing": 0,
+            "sun": {
+                "azimuth": 304.9,
+                "altitude": -69.89,
+                "visible": false
+            },
+            "recommendation": {
+                "seatSide": "left",
+                "reason": "Default recommendation",
+                "viewScore": 5,
+                "specialCondition": "Standard conditions"
+            }
+        }
+    ],
+    "metadata": {
+        "analysisMethod": "AI-powered 100-point analysis",
+        "totalPointsAnalyzed": 100,
+        "overallScore": 8
+    }
+}

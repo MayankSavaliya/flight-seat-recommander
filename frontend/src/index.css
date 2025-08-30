@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet map styles - necessary for map functionality */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Custom slider styles for range inputs */
+.slider::-webkit-slider-thumb {
+  @apply appearance-none h-5 w-5 rounded-full bg-blue-500 cursor-pointer border-2 border-white shadow-md;
+}
+
+.slider::-moz-range-thumb {
+  @apply h-5 w-5 rounded-full bg-blue-500 cursor-pointer border-2 border-white shadow-md;
+}
