@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from 'react-
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { ArrowLeft, Play, Pause, RotateCcw, Home, Globe, Eye, Sun, MapPin, Clock, Star, Plane } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 // Custom CSS for the map
 const mapStyles = `
@@ -291,13 +292,31 @@ function PointRecommendation({ pointData }) {
       <div className="space-y-5">
         <div>
           <div className="text-slate-600 text-base font-medium mb-2">Reason</div>
-          <div className="text-slate-700 bg-white/80 rounded-lg p-4 text-base leading-relaxed">{recommendation.reason}</div>
+          <div className="text-slate-700 bg-white/80 rounded-lg p-4 text-base leading-relaxed">
+            <ReactMarkdown 
+              components={{
+                p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
+                strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>
+              }}
+            >
+              {recommendation.reason}
+            </ReactMarkdown>
+          </div>
         </div>
         
         {recommendation.specialCondition && (
           <div>
             <div className="text-slate-600 text-base font-medium mb-2">Special Conditions</div>
-            <div className="text-slate-700 bg-white/80 rounded-lg p-4 text-base leading-relaxed font-semibold text-orange-700">{recommendation.specialCondition}</div>
+            <div className="text-slate-700 bg-white/80 rounded-lg p-4 text-base leading-relaxed font-semibold text-orange-700">
+              <ReactMarkdown 
+                components={{
+                  p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
+                  strong: ({ children }) => <strong className="font-semibold text-orange-800">{children}</strong>
+                }}
+              >
+                {recommendation.specialCondition}
+              </ReactMarkdown>
+            </div>
           </div>
         )}
 

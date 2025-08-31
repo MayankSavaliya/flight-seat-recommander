@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ArrowLeft, Home, Award, Plane, Sun, Clock, CheckCircle, MapPin, Star, Eye, Calendar, Navigation, Sparkles } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 function Results({ flightData, onBack, onViewVisualization, onReturnHome }) {
   const [recommendation, setRecommendation] = useState(null);
@@ -389,9 +390,16 @@ function Results({ flightData, onBack, onViewVisualization, onReturnHome }) {
               </div>
               <h3 className="text-xl font-bold text-slate-800">Why This Recommendation?</h3>
             </div>
-            <p className="text-slate-700 leading-relaxed text-lg">
-              {recommendation.reasoning || "Based on your flight time, route, and sun position calculations, this side will provide better lighting conditions and views of key landmarks. This recommendation factors in the sun's angle throughout your journey to minimize glare while maximizing scenic views."}
-            </p>
+            <div className="text-slate-700 leading-relaxed text-lg">
+              <ReactMarkdown 
+                components={{
+                  p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
+                  strong: ({ children }) => <strong className="font-semibold text-slate-900">{children}</strong>
+                }}
+              >
+                {recommendation.reasoning || "Based on your flight time, route, and sun position calculations, this side will provide better lighting conditions and views of key landmarks. This recommendation factors in the sun's angle throughout your journey to minimize glare while maximizing scenic views."}
+              </ReactMarkdown>
+            </div>
           </div>
           
           {/* Call to action */}
