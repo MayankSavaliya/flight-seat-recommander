@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage'
 import FlightInput from './components/FlightInput'
 import Results from './components/Results'
 import InteractiveFlightMap from './components/InteractiveFlightMap'
+import NotFound from './components/NotFound'
 import { LoadingOverlay } from './components/UI/LoadingOverlay'
 
 // API base URL - adjust based on your backend setup
@@ -111,6 +112,9 @@ function App() {
             />
           }
         />
+
+        {/* 404 Not Found Route - Must be last */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   )

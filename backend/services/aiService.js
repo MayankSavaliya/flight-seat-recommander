@@ -82,6 +82,15 @@ class AIService {
           - No backticks.
           - Must exactly match schema.
 
+        ⚠️ CRITICAL FORMAT REQUIREMENTS:
+        - Response must start with { and end with }
+        - Include ALL required fields: pointAnalyses array AND finalRecommendation object
+        - Every pointAnalyses entry must have: pointIndex, seatSide, reason, viewScore, specialCondition, location
+        - finalRecommendation must have: finalSeatSide, confidence, reasoning, bestViewingPeriods, overallScore, specialHighlights, recommendation
+        - Use only valid enum values: seatSide (left/right/none), confidence (high/medium/low), specialCondition (Sunrise/Sunset/Golden Hour/Normal daylight/Overhead Sun/Not visible)
+        - Numbers must be integers where specified (viewScore: 1-10, overallScore: 1-10)
+        - Arrays must not be empty - include at least one item in bestViewingPeriods and specialHighlights
+
         ================================================================================
         FLIGHT OVERVIEW:
         - Route: ${flightData.fromCoords.latitude}, ${flightData.fromCoords.longitude} → ${flightData.toCoords.latitude}, ${flightData.toCoords.longitude}
@@ -135,6 +144,13 @@ class AIService {
 
         Important: Ensure the final recommendation takes into account all flight points and provides a thorough analysis 
         of viewing opportunities throughout the entire flight duration.
+
+        🔥 MANDATORY JSON FORMAT VALIDATION:
+        - Start response immediately with opening brace {
+        - End response with closing brace } 
+        - No explanatory text before or after JSON
+        - Validate all required fields are present before responding
+        - Double-check array lengths match expected data (${allPointData.length} pointAnalyses entries required)
       `;
       
 

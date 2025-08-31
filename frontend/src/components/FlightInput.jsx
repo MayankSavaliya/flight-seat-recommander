@@ -260,10 +260,6 @@ function FlightInput({ onSubmit, onBack }) {
             </form>
           </div>
         </main>
-        
-        <footer className="text-center mt-12">
-            <p className="text-slate-500">Powered by Gemini</p>
-        </footer>
       </div>
     </div>
   );
