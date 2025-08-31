@@ -7,8 +7,7 @@ import InteractiveFlightMap from './components/InteractiveFlightMap'
 import NotFound from './components/NotFound'
 import { LoadingOverlay } from './components/UI/LoadingOverlay'
 
-// API base URL - adjust based on your backend setup
-const API_BASE = 'http://localhost:3001';
+import { API_ENDPOINTS } from './config/api';
 
 function App() {
   const navigate = useNavigate()
@@ -30,7 +29,7 @@ function App() {
     setError(null)
 
     try {
-      const response = await fetch(`${API_BASE}/api/flight/recommendation`, {
+      const response = await fetch(API_ENDPOINTS.FLIGHT_RECOMMENDATION, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

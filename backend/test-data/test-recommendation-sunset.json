@@ -1,0 +1,27 @@
+{
+  "fromAirport": {
+    "name": "Charles de Gaulle Airport",
+    "city": "Paris",
+    "country": "France",
+    "iata": "CDG",
+    "icao": "LFPG",
+    "coordinates": {
+      "latitude": 49.0097,
+      "longitude": 2.5479
+    }
+  },
+  "toAirport": {
+    "name": "Tokyo Haneda Airport",
+    "city": "Tokyo",
+    "country": "Japan",
+    "iata": "HND",
+    "icao": "RJTT",
+    "coordinates": {
+      "latitude": 35.5494,
+      "longitude": 139.7798
+    }
+  },
+  "departureDate": "2025-09-15",
+  "departureTime": "18:45",
+  "viewPreference": "sunset"
+}

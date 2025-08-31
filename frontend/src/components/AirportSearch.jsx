@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, X, Loader2, PlaneTakeoff } from 'lucide-react';
+import { API_ENDPOINTS } from '../config/api';
 
 function AirportSearch({
   label,
@@ -19,8 +20,6 @@ function AirportSearch({
   const componentRef = useRef(null);
   const suggestionsListRef = useRef(null);
   const searchTimeoutRef = useRef(null);
-
-  const API_BASE = 'http://localhost:3001';
 
   useEffect(() => {
     if (value) {
@@ -61,7 +60,7 @@ function AirportSearch({
     }
     setIsLoading(true);
     try {
-      const response = await fetch(`${API_BASE}/api/airports/search?query=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch(`${API_ENDPOINTS.AIRPORT_SEARCH}?query=${encodeURIComponent(searchQuery)}`);
       if (!response.ok) throw new Error('Network response was not ok');
       const data = await response.json();
       setSuggestions(data.results || []);
