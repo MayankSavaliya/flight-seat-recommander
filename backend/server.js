@@ -13,8 +13,15 @@ const sunRoutes = require('./routes/sunRoutes');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// CORS configuration
+const corsOptions = {
+  origin: process.env.FRONTEND_URI || 'http://localhost:5173',
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Use routes
