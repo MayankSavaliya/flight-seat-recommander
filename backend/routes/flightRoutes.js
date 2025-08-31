@@ -41,7 +41,7 @@ router.post('/recommendation', async (req, res) => {
     // const staticData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
     
     // res.json(staticData);
-    const { fromAirport, toAirport, departureDate, departureTime } = req.body;
+    const { fromAirport, toAirport, departureDate, departureTime, viewPreference } = req.body;
     
     if (!fromAirport || !toAirport || !departureDate || !departureTime) {
       return res.status(400).json({ error: 'Missing required fields' });
@@ -55,7 +55,7 @@ router.post('/recommendation', async (req, res) => {
     };
     
     // Get AI-powered seat recommendation with 100-point analysis
-    const seatRecommendation = await flightCalculationService.getOptimalSeatSideWithAI(flightData, aiService);
+    const seatRecommendation = await flightCalculationService.getOptimalSeatSideWithAI(flightData, aiService, viewPreference);
     
     res.json({
       success: true,

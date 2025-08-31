@@ -62,7 +62,7 @@ class FlightCalculationService {
   /**
    * Calculate sun position and get AI analysis for each point along flight route
    */
-  async calculateSunAlongRouteWithAI(route, departureTime, flightDurationMinutes, aiService, fromCoords, toCoords) {
+  async calculateSunAlongRouteWithAI(route, departureTime, flightDurationMinutes, aiService, fromCoords, toCoords, userPreference = null) {
     const allPointData = [];
     for (let i = 0; i < route.length; i++) {
       const point = route[i];
@@ -93,7 +93,7 @@ class FlightCalculationService {
       flightTime: this.estimateFlightTime(this.calculateDistance(fromCoords, toCoords))
     };
     
-    const analysis = await aiService.analyzeFlightAndGetRecommendation(allPointData, flightData);
+    const analysis = await aiService.analyzeFlightAndGetRecommendation(allPointData, flightData, userPreference);
     const sunPositions = allPointData.map((pointData, index) => {
       const aiRecommendation = analysis.pointAnalyses && analysis.pointAnalyses[index] 
         ? analysis.pointAnalyses[index] 
@@ -122,13 +122,13 @@ class FlightCalculationService {
   /**
    * Get final seat recommendation using AI analysis
    */
-  async getOptimalSeatSideWithAI(flightData, aiService) {
+  async getOptimalSeatSideWithAI(flightData, aiService, userPreference = null) {
     const { fromCoords, toCoords, departureTime } = flightData;
     const distance = this.calculateDistance(fromCoords, toCoords);
     const flightTime = this.estimateFlightTime(distance);
     const route = this.generateFlightRoute(fromCoords, toCoords, 100);
     const sunPositionsWithAI = await this.calculateSunAlongRouteWithAI(
-      route, departureTime, flightTime.totalMinutes, aiService, fromCoords, toCoords
+      route, departureTime, flightTime.totalMinutes, aiService, fromCoords, toCoords, userPreference
     );
     const finalRecommendation = sunPositionsWithAI.finalRecommendation;
     

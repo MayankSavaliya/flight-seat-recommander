@@ -5,12 +5,22 @@ class AIService {
     this.genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || 'your-api-key-here' });
   }
 
-  async analyzeFlightAndGetRecommendation(allPointData, flightData) {
+  async analyzeFlightAndGetRecommendation(allPointData, flightData, userPreference = null) {
     try {
+      const preferencePrompt = userPreference ? `
+        
+        USER PREFERENCE: The user specifically wants "${userPreference}" views.
+        ${userPreference === 'sunrise' ? 'PRIORITIZE sunrise and early morning golden hour opportunities.' : ''}
+        ${userPreference === 'sunset' ? 'PRIORITIZE sunset and evening golden hour opportunities.' : ''}
+        ${userPreference === 'general' ? 'PRIORITIZE overall best scenic viewing throughout the entire flight.' : ''}
+        
+        ` : '';
+
       const prompt = `
         You are an aviation seat advisor AI. Analyze the full flight path using provided points, sun data, and flight metadata. 
         Use strict mathematical reasoning, domain knowledge, and geographic context. 
         Output ONLY JSON in the schema provided, no extra commentary, no backticks.
+        ${preferencePrompt}
 
         ================================================================================
         ANALYSIS RULES (MUST FOLLOW STRICTLY):
