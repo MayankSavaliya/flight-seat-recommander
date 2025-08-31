@@ -41,60 +41,58 @@ const createPlaneIcon = (rotation) => L.divIcon({
   popupAnchor: [0, -20],
 });
 
-// Custom departure marker
+// Custom departure marker - using location icon
 const createDepartureIcon = () => L.divIcon({
   html: `<div style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="12" cy="12" r="10" fill="#10B981" stroke="#047857" stroke-width="2"/>
-      <path d="M12 6V12L16 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-      <text x="12" y="4" text-anchor="middle" fill="#047857" font-size="10" font-weight="bold">DEP</text>
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="18" fill="#10B981" stroke="#047857" stroke-width="2"/>
+      <path d="M20 8C16.1 8 13 11.1 13 15C13 20.2 20 30 20 30S27 20.2 27 15C27 11.1 23.9 8 20 8Z" fill="white"/>
+      <circle cx="20" cy="15" r="3" fill="#10B981"/>
+      <text x="20" y="35" text-anchor="middle" fill="#047857" font-size="6" font-weight="bold">SOURCE</text>
     </svg>
   </div>`,
   className: 'departure-icon',
-  iconSize: [32, 32],
-  iconAnchor: [16, 16],
-  popupAnchor: [0, -16],
+  iconSize: [40, 40],
+  iconAnchor: [20, 20],
+  popupAnchor: [0, -20],
 });
 
-// Custom arrival marker
+// Custom arrival marker - using location icon
 const createArrivalIcon = () => L.divIcon({
   html: `<div style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="12" cy="12" r="10" fill="#EF4444" stroke="#DC2626" stroke-width="2"/>
-      <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="12" y="4" text-anchor="middle" fill="#DC2626" font-size="10" font-weight="bold">ARR</text>
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="18" fill="#EF4444" stroke="#DC2626" stroke-width="2"/>
+      <path d="M20 8C16.1 8 13 11.1 13 15C13 20.2 20 30 20 30S27 20.2 27 15C27 11.1 23.9 8 20 8Z" fill="white"/>
+      <circle cx="20" cy="15" r="3" fill="#EF4444"/>
+      <text x="20" y="35" text-anchor="middle" fill="#DC2626" font-size="6" font-weight="bold">DESTINATION</text>
     </svg>
   </div>`,
   className: 'arrival-icon',
-  iconSize: [32, 32],
-  iconAnchor: [16, 16],
-  popupAnchor: [0, -16],
+  iconSize: [40, 40],
+  iconAnchor: [20, 20],
+  popupAnchor: [0, -20],
 });
 
-// Helper function to get airport name from coordinates
-const getAirportName = (lat, lon) => {
-  // Common airports mapping for demo - in real app, you'd fetch from your backend
-  const airports = {
-    // LaGuardia Airport (NYC)
-    '40.77,-73.87': 'LaGuardia Airport (LGA) - New York',
-    '40.71,-74.01': 'John F. Kennedy International Airport (JFK) - New York', 
-    // LAX (Los Angeles)
-    '33.94,-118.41': 'Los Angeles International Airport (LAX) - Los Angeles',
-    '34.05,-118.24': 'Hollywood Burbank Airport (BUR) - Los Angeles Area',
-  };
-
-  // Create a key from coordinates (rounded to 2 decimal places)
-  const key = `${lat.toFixed(2)},${lon.toFixed(2)}`;
-  return airports[key] || `Airport (${lat.toFixed(2)}°, ${lon.toFixed(2)}°)`;
+// Helper function to format airport name from airport object
+const formatAirportName = (airport) => {
+  if (!airport) return 'Unknown Airport';
+  
+  const parts = [];
+  if (airport.name) parts.push(airport.name);
+  if (airport.iata) parts.push(`(${airport.iata})`);
+  if (airport.city) parts.push(airport.city);
+  if (airport.country) parts.push(airport.country);
+  
+  return parts.join(' - ');
 };
 
 // Helper function to format seat side recommendation
 const formatSeatSide = (seatSide) => {
   const sideMap = {
-    'left': 'Left Side (A, B, C)',
-    'right': 'Right Side (D, E, F)', 
-    'window': 'Window Seats (A, F)',
-    'aisle': 'Aisle Seats (C, D)'
+    'left': 'Left Side',
+    'right': 'Right Side', 
+    'window': 'Window Seats',
+    'aisle': 'Aisle Seats'
   };
   
   return sideMap[seatSide.toLowerCase()] || `${seatSide.toUpperCase()} SIDE`;
@@ -234,7 +232,7 @@ function FlightProgress({ flightPoints, currentPoint, onPointChange }) {
             <div>
               <span className="text-slate-600 font-medium">Location:</span>
               <div className="text-slate-800 font-bold">
-                {currentPointData.recommendation?.location || getAirportName(currentPointData.coordinates[0], currentPointData.coordinates[1])}
+                {currentPointData.recommendation?.location || `${currentPointData.coordinates[0].toFixed(2)}°, ${currentPointData.coordinates[1].toFixed(2)}°`}
                 <div className="text-sm text-slate-600 mt-1">
                   {currentPointData.coordinates[0].toFixed(2)}°, {currentPointData.coordinates[1].toFixed(2)}°
                 </div>
@@ -274,43 +272,43 @@ function PointRecommendation({ pointData }) {
   const scoreColor = viewScore >= 8 ? 'text-green-400' : viewScore >= 6 ? 'text-yellow-400' : 'text-red-400';
 
   return (
-    <div className="bg-gradient-to-br from-orange-100 via-red-100 to-pink-100 rounded-2xl p-6 shadow-lg border border-orange-200">
-      <h3 className="text-xl font-semibold text-slate-700 mb-4 flex items-center gap-2">
-        <Eye className="w-6 h-6 text-orange-600" />
+    <div className="bg-gradient-to-br from-orange-100 via-red-100 to-pink-100 rounded-2xl p-8 shadow-xl border border-orange-200">
+      <h3 className="text-2xl font-bold text-slate-700 mb-6 flex items-center gap-3">
+        <Eye className="w-7 h-7 text-orange-600" />
         Current Seat Recommendation
       </h3>
       
       {/* Recommendation */}
-      <div className="bg-gradient-to-r from-orange-400 to-red-400 rounded-xl p-4 mb-4 text-center">
-        <div className="text-white/90 text-sm mb-2">Best Seat Choice</div>
-        <div className="text-2xl font-bold text-white mb-2 tracking-wider">
+      <div className="bg-gradient-to-r from-orange-400 to-red-400 rounded-xl p-6 mb-6 text-center shadow-lg">
+        <div className="text-white/90 text-base mb-3">Best Seat Choice</div>
+        <div className="text-3xl font-bold text-white mb-3 tracking-wider">
           {formatSeatSide(recommendation.seatSide)}
         </div>
-        <div className="text-white/90">View Score: <span className={`text-yellow-200 font-bold text-lg`}>{viewScore}/10</span></div>
+        <div className="text-white/90 text-lg">View Score: <span className={`text-yellow-200 font-bold text-xl`}>{viewScore}/10</span></div>
       </div>
 
       {/* Details */}
-      <div className="space-y-4">
+      <div className="space-y-5">
         <div>
-          <div className="text-slate-600 text-sm mb-1">Reason</div>
-          <div className="text-slate-700 bg-white/70 rounded-lg p-3">{recommendation.reason}</div>
+          <div className="text-slate-600 text-base font-medium mb-2">Reason</div>
+          <div className="text-slate-700 bg-white/80 rounded-lg p-4 text-base leading-relaxed">{recommendation.reason}</div>
         </div>
         
         {recommendation.specialCondition && (
           <div>
-            <div className="text-slate-600 text-sm mb-1">Special Conditions</div>
-            <div className="text-slate-700 bg-white/70 rounded-lg p-3">{recommendation.specialCondition}</div>
+            <div className="text-slate-600 text-base font-medium mb-2">Special Conditions</div>
+            <div className="text-slate-700 bg-white/80 rounded-lg p-4 text-base leading-relaxed font-semibold text-orange-700">{recommendation.specialCondition}</div>
           </div>
         )}
 
-        <div className="grid grid-cols-2 gap-4 pt-4 border-t border-orange-200">
-          <div className="bg-white/70 rounded-lg p-3 text-center">
-            <div className="text-slate-600 text-sm">Sun Azimuth</div>
-            <div className="text-slate-800 font-medium">{sun.azimuth}°</div>
+        <div className="grid grid-cols-2 gap-6 pt-6 border-t border-orange-200">
+          <div className="bg-white/80 rounded-lg p-4 text-center shadow-sm">
+            <div className="text-slate-600 text-base font-medium">Sun Azimuth</div>
+            <div className="text-slate-800 font-bold text-xl mt-1">{sun.azimuth}°</div>
           </div>
-          <div className="bg-white/70 rounded-lg p-3 text-center">
-            <div className="text-slate-600 text-sm">Sun Altitude</div>
-            <div className="text-slate-800 font-medium">{sun.altitude}°</div>
+          <div className="bg-white/80 rounded-lg p-4 text-center shadow-sm">
+            <div className="text-slate-600 text-base font-medium">Sun Altitude</div>
+            <div className="text-slate-800 font-bold text-xl mt-1">{sun.altitude}°</div>
           </div>
         </div>
       </div>
@@ -335,21 +333,66 @@ function InteractiveFlightMap({ flightData, onBack, onReturnHome }) {
   const [currentPoint, setCurrentPoint] = useState(0);
   const [showFinalRecommendation, setShowFinalRecommendation] = useState(false);
 
-  const { flightDetails, flightPoints, finalRecommendation } = flightData;
-
-  if (!flightDetails || !flightPoints) {
+  // Check if flightData exists before destructuring
+  if (!flightData) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900 flex items-center justify-center">
-        <div className="text-center text-white">
-          <div className="text-2xl mb-4">No flight data available</div>
-          <div className="text-blue-200">Please go back and submit your flight details</div>
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-2xl mb-4 text-slate-800">No flight data available</div>
+          <div className="text-slate-600">Please go back and submit your flight details</div>
+          <button 
+            onClick={onBack}
+            className="mt-4 px-6 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+          >
+            Go Back
+          </button>
         </div>
       </div>
     );
   }
 
-  const routeCoordinates = flightPoints.map(point => [point.coordinates[0], point.coordinates[1]]);
-  const currentPointData = flightPoints[currentPoint];
+  const { flightDetails, flightPoints, finalRecommendation } = flightData;
+
+  if (!flightDetails || !flightPoints) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-2xl mb-4 text-slate-800">Incomplete flight data</div>
+          <div className="text-slate-600">Please go back and submit your flight details</div>
+          <button 
+            onClick={onBack}
+            className="mt-4 px-6 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+          >
+            Go Back
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  // Additional safety checks
+  if (!Array.isArray(flightPoints) || flightPoints.length === 0) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-2xl mb-4 text-slate-800">No flight points available</div>
+          <div className="text-slate-600">Flight data seems incomplete</div>
+          <button 
+            onClick={onBack}
+            className="mt-4 px-6 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+          >
+            Go Back
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  const routeCoordinates = flightPoints
+    .filter(point => point && point.coordinates && Array.isArray(point.coordinates) && point.coordinates.length >= 2)
+    .map(point => [point.coordinates[0], point.coordinates[1]]);
+  
+  const currentPointData = flightPoints[currentPoint] || null;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 relative overflow-hidden">
@@ -391,9 +434,9 @@ function InteractiveFlightMap({ flightData, onBack, onReturnHome }) {
             </span>
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
-            <strong className="text-slate-800">{getAirportName(flightDetails.fromCoords.latitude, flightDetails.fromCoords.longitude)}</strong>
+            <strong className="text-slate-800">{formatAirportName(flightDetails.fromAirport)}</strong>
             {' '} → {' '}
-            <strong className="text-slate-800">{getAirportName(flightDetails.toCoords.latitude, flightDetails.toCoords.longitude)}</strong>
+            <strong className="text-slate-800">{formatAirportName(flightDetails.toAirport)}</strong>
           </p>
         </div>
 
@@ -426,10 +469,11 @@ function InteractiveFlightMap({ flightData, onBack, onReturnHome }) {
                   icon={createDepartureIcon()}
                 >
                   <Popup>
-                    <div className="text-center">
-                      <div className="font-bold text-green-600">✈️ Departure</div>
-                      <div className="text-sm font-medium">{getAirportName(flightDetails.fromCoords.latitude, flightDetails.fromCoords.longitude)}</div>
-                      <div className="text-xs text-slate-500 mt-1">Starting Point</div>
+                    <div className="text-center p-2">
+                      <div className="font-bold text-green-600 mb-1">🛫 SOURCE - DEPARTURE</div>
+                      <div className="text-sm font-medium text-slate-700">{formatAirportName(flightDetails.fromAirport)}</div>
+                      <div className="text-xs text-slate-500 mt-2">Flight Starting Point</div>
+                      <div className="text-xs text-green-600 font-medium mt-1">Green Marker = Source</div>
                     </div>
                   </Popup>
                 </Marker>
@@ -440,19 +484,20 @@ function InteractiveFlightMap({ flightData, onBack, onReturnHome }) {
                   icon={createArrivalIcon()}
                 >
                   <Popup>
-                    <div className="text-center">
-                      <div className="font-bold text-red-600">🛬 Arrival</div>
-                      <div className="text-sm font-medium">{getAirportName(flightDetails.toCoords.latitude, flightDetails.toCoords.longitude)}</div>
-                      <div className="text-xs text-slate-500 mt-1">Destination</div>
+                    <div className="text-center p-2">
+                      <div className="font-bold text-red-600 mb-1">🛬 DESTINATION - ARRIVAL</div>
+                      <div className="text-sm font-medium text-slate-700">{formatAirportName(flightDetails.toAirport)}</div>
+                      <div className="text-xs text-slate-500 mt-2">Flight Ending Point</div>
+                      <div className="text-xs text-red-600 font-medium mt-1">Red Marker = Destination</div>
                     </div>
                   </Popup>
                 </Marker>
                 
                 {/* Current Position Marker with Airplane */}
-                {currentPointData && (
+                {currentPointData && currentPointData.coordinates && Array.isArray(currentPointData.coordinates) && currentPointData.coordinates.length >= 2 && (
                   <Marker 
                     position={[currentPointData.coordinates[0], currentPointData.coordinates[1]]}
-                    icon={createPlaneIcon(currentPointData.flightBearing)}
+                    icon={createPlaneIcon(currentPointData.flightBearing || 0)}
                     zIndexOffset={1000}
                   >
                     <Popup className="custom-popup">
@@ -462,10 +507,10 @@ function InteractiveFlightMap({ flightData, onBack, onReturnHome }) {
                           <div className="font-bold text-orange-600">Current Position</div>
                         </div>
                         <div className="font-medium text-slate-700 mt-1">
-                          {currentPointData.recommendation?.location || getAirportName(currentPointData.coordinates[0], currentPointData.coordinates[1])}
+                          {currentPointData.recommendation?.location || `${currentPointData.coordinates[0].toFixed(2)}°, ${currentPointData.coordinates[1].toFixed(2)}°`}
                         </div>
-                        <div className="text-sm text-slate-600 mt-1">Progress: {currentPointData.progressPercent}%</div>
-                        <div className="text-sm text-slate-600">Time: {new Date(currentPointData.time).toLocaleTimeString()}</div>
+                        <div className="text-sm text-slate-600 mt-1">Progress: {currentPointData.progressPercent || '0'}%</div>
+                        <div className="text-sm text-slate-600">Time: {currentPointData.time ? new Date(currentPointData.time).toLocaleTimeString() : 'N/A'}</div>
                         <div className="mt-2 pt-2 border-t border-slate-200">
                           <div className="text-sm font-medium flex items-center justify-center gap-1">
                             Recommended: 
@@ -491,22 +536,26 @@ function InteractiveFlightMap({ flightData, onBack, onReturnHome }) {
             </div>
           </div>
 
-          {/* Controls and Info - Two Column Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            {/* Left Column */}
-            <div className="space-y-6">
-              {/* Flight Progress */}
-              <FlightProgress 
-                flightPoints={flightPoints}
-                currentPoint={currentPoint}
-                onPointChange={setCurrentPoint}
-              />
+          {/* Controls and Info - Custom Layout */}
+          <div className="mt-6 space-y-6">
+            {/* Top Row: Flight Progress (left, smaller) and Current Seat Recommendation (right, wider) */}
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+              {/* Flight Progress - Left Side (2/5 width) */}
+              <div className="lg:col-span-2">
+                <FlightProgress 
+                  flightPoints={flightPoints}
+                  currentPoint={currentPoint}
+                  onPointChange={setCurrentPoint}
+                />
+              </div>
 
-              {/* Point Recommendation */}
-              <PointRecommendation pointData={currentPointData} />
+              {/* Current Seat Recommendation - Right Side (3/5 width) */}
+              <div className="lg:col-span-3">
+                <PointRecommendation pointData={currentPointData} />
+              </div>
             </div>
 
-            {/* Right Column */}
+            {/* Bottom Row: Final Recommendation Section (Full Width) */}
             <div className="space-y-6">
               {/* Final Recommendation Section */}
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 border border-emerald-100 shadow-xl">
@@ -527,47 +576,51 @@ function InteractiveFlightMap({ flightData, onBack, onReturnHome }) {
 
             {/* Final Recommendation Details */}
             {showFinalRecommendation && finalRecommendation && (
-              <div className="bg-gradient-to-br from-purple-200 via-indigo-200 to-blue-200 rounded-2xl p-6 shadow-lg border border-purple-300">
-                <h3 className="text-xl font-bold text-slate-700 mb-4 flex items-center gap-2">
-                  <Star className="w-6 h-6 text-purple-600" />
+              <div className="bg-gradient-to-br from-purple-200 via-indigo-200 to-blue-200 rounded-2xl p-8 shadow-xl border border-purple-300">
+                <h3 className="text-2xl font-bold text-slate-700 mb-6 flex items-center gap-3">
+                  <Star className="w-8 h-8 text-purple-600" />
                   Detailed Analysis</h3>
                 
-                <div className="bg-gradient-to-r from-green-400 to-emerald-500 rounded-xl p-4 mb-4 text-center">
-                  <div className="text-white/90 text-sm mb-2">Overall Best Choice</div>
-                  <div className="text-2xl font-bold text-white mb-2">
+                <div className="bg-gradient-to-r from-green-400 to-emerald-500 rounded-xl p-6 mb-6 text-center shadow-lg">
+                  <div className="text-white/90 text-base mb-3">Overall Best Choice</div>
+                  <div className="text-3xl font-bold text-white mb-3">
                     {formatSeatSide(finalRecommendation.side)}
                   </div>
-                  <div className="text-white/90">Confidence: {finalRecommendation.confidence}</div>
+                  <div className="text-white/90 text-lg">Confidence: {finalRecommendation.confidence}</div>
                 </div>
 
-                <div className="space-y-3">
-                  <div>
-                    <div className="text-slate-600 text-sm mb-1">Reasoning</div>
-                    <div className="text-slate-700 text-sm bg-white/70 rounded-lg p-3">{finalRecommendation.reason}</div>
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {/* Left Column - Reasoning */}
+                  <div className="space-y-5">
+                    <div>
+                      <div className="text-slate-600 text-base font-medium mb-3">Reasoning</div>
+                      <div className="text-slate-700 text-base bg-white/80 rounded-lg p-4 leading-relaxed">{finalRecommendation.reason}</div>
+                    </div>
+                    
+                    {finalRecommendation.specialHighlights && finalRecommendation.specialHighlights.length > 0 && (
+                      <div>
+                        <div className="text-slate-600 text-base font-medium mb-3">Special Highlights</div>
+                        <div className="bg-white/80 rounded-lg p-4 border border-purple-200 space-y-2">
+                          {finalRecommendation.specialHighlights.map((highlight, index) => (
+                            <div key={index} className="text-slate-700 text-base">• {highlight}</div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  
+
+                  {/* Right Column - Viewing Periods */}
                   {finalRecommendation.bestViewingPeriods && finalRecommendation.bestViewingPeriods.length > 0 && (
                     <div>
-                      <div className="text-slate-600 text-sm mb-2">Best Viewing Periods</div>
-                      <div className="space-y-2">
+                      <div className="text-slate-600 text-base font-medium mb-3">Best Viewing Periods</div>
+                      <div className="space-y-3">
                         {finalRecommendation.bestViewingPeriods.map((period, index) => (
-                          <div key={index} className="bg-white/70 rounded-lg p-3 border border-purple-200">
-                            <div className="text-slate-800 text-sm font-medium">
+                          <div key={index} className="bg-white/80 rounded-lg p-4 border border-purple-200 shadow-sm">
+                            <div className="text-slate-800 text-base font-medium mb-2">
                               {period.startPercent}% - {period.endPercent}%
                             </div>
-                            <div className="text-slate-600 text-xs mt-1">{period.description}</div>
+                            <div className="text-slate-600 text-sm">{period.description}</div>
                           </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {finalRecommendation.specialHighlights && finalRecommendation.specialHighlights.length > 0 && (
-                    <div>
-                      <div className="text-slate-600 text-sm mb-2">Special Highlights</div>
-                      <div className="bg-white/70 rounded-lg p-3 border border-purple-200">
-                        {finalRecommendation.specialHighlights.map((highlight, index) => (
-                          <div key={index} className="text-slate-700 text-sm mb-1">• {highlight}</div>
                         ))}
                       </div>
                     </div>

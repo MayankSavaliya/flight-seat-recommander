@@ -260,9 +260,9 @@ function Results({ flightData, onBack, onViewVisualization, onReturnHome }) {
                   {recommendation.seatSide === 'EITHER' ? 'Either Side' : `${recommendation.seatSide} Side`}
                 </div>
                 <div className="text-lg text-white/90">
-                  {recommendation.seatSide === 'LEFT' ? '(Window seats A, B, C)' : 
-                   recommendation.seatSide === 'RIGHT' ? '(Window seats K, J, H)' : 
-                   '(Any window seat)'}
+                  {recommendation.seatSide === 'LEFT' ? 'Left window seats' : 
+                   recommendation.seatSide === 'RIGHT' ? 'Right window seats' : 
+                   'Any window seat'}
                 </div>
                 <div className="text-sm text-white/80 mt-3 flex items-center justify-center">
                   <Star className="w-4 h-4 mr-1" />
