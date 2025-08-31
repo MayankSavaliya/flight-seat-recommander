@@ -14,17 +14,12 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // CORS configuration
-const corsOptions = {
-  origin: [
-    process.env.FRONTEND_URI || 'http://localhost:5173',
-    'https://flight-seat-recommander.vercel.app'
-  ],
-  credentials: true,
-  optionsSuccessStatus: 200
-};
+app.use(cors({
+  origin: '*',
+  methods: ['POST', 'GET', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+}));
 
-// middleware
-app.use(cors(corsOptions));
 app.use(express.json());
 
 // Use routes
